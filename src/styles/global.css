@@ -40,7 +40,9 @@
   font-stretch: normal;
 }
 
-body,
+body {
+  color: 222222c;
+}
 button {
   -webkit-font-smoothing: antialiased;
   font-family: "graphik web", sans-serif;

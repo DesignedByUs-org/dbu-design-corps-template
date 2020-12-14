@@ -12,18 +12,18 @@ module.exports = {
     {
       resolve: "gatsby-source-twitter-profiles",
       options: {
-        consumerKey: process.env.WWD_TWITTER_CONSUMER_KEY,
-        consumerSecret: process.env.WWD_TWITTER_CONSUMER_KEY,
-        bearerToken: process.env.WWD_TWITTER_BEARER_TOKEN,
-        twitterIdForFollowingList: "855501234924429312",
+        consumerKey: "ccU9ncA1t0SkHQEa16Koe3F9Y",
+        consumerSecret: "a4NgEyvY8w7D28cV07XaZE1RoPLFS7PTVQ8tG8anOwj8xGAahY",
+        bearerToken: "AAAAAAAAAAAAAAAAAAAAAOltKQEAAAAAp%2BUt9DFRqxS0DaKzT%2B6wYWTz91w%3DU7QT71JvnmXajEFbWbSJe54dZ6bp5YAkI3KSXJyy2H8d3pYewM",
+        twitterIdForFollowingList: "1194121866274721792",
       },
     },
-    {
-      resolve: "gatsby-source-seeker",
-      options: {
-        key: process.env.WWD_SEEKER_KEY,
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-seeker",
+    //   options: {
+    //     key: process.env.WWD_SEEKER_KEY,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -65,44 +65,44 @@ module.exports = {
       resolve: `gatsby-plugin-feed`,
       options: {
         feeds: [
-          {
-            serialize: ({ query: { allSeeker } }) => {
-              return allSeeker.edges.map((edge) => {
-                return {
-                  ...edge.node.job,
-                  title: `${edge.node.job.company.name}, ${edge.node.job.job_title}`,
-                  description: `${edge.node.job.company.name} is hiring a ${edge.node.job.job_title} in ${edge.node.job.job_location}.`,
-                  date: edge.node.job.creation_date,
-                  url: `https://womenwho.design/${edge.node.fields.slug}`,
-                  guid: `https://womenwho.design/${edge.node.fields.slug}`,
-                };
-              });
-            },
-            query: `
-              {
-                allSeeker(sort: { fields: job___creation_date, order: DESC }) {
-                  edges {
-                    node {
-                      id
-                      fields {
-                        slug
-                      }
-                      job {
-                        job_title
-                        job_location
-                        creation_date
-                        company {
-                          name
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: "/rss.xml",
-            title: "Women Who Design Job Board",
-          },
+          // {
+            // serialize: ({ query: { allSeeker } }) => {
+            //   return allSeeker.edges.map((edge) => {
+            //     return {
+            //       ...edge.node.job,
+            //       title: `${edge.node.job.company.name}, ${edge.node.job.job_title}`,
+            //       description: `${edge.node.job.company.name} is hiring a ${edge.node.job.job_title} in ${edge.node.job.job_location}.`,
+            //       date: edge.node.job.creation_date,
+            //       url: `https://womenwho.design/${edge.node.fields.slug}`,
+            //       guid: `https://womenwho.design/${edge.node.fields.slug}`,
+            //     };
+            //   });
+            // },
+            // query: `
+            //   {
+            //     allSeeker(sort: { fields: job___creation_date, order: DESC }) {
+            //       edges {
+            //         node {
+            //           id
+            //           fields {
+            //             slug
+            //           }
+            //           job {
+            //             job_title
+            //             job_location
+            //             creation_date
+            //             company {
+            //               name
+            //             }
+            //           }
+            //         }
+            //       }
+            //     }
+            //   }
+            // `,
+            // output: "/rss.xml",
+            // title: "Women Who Design Job Board",
+          // },
         ],
       },
     },

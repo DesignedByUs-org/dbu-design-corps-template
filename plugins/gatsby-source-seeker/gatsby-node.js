@@ -13,11 +13,11 @@ exports.sourceNodes = async ({ actions }, configOptions) => {
   const apiOptions = configOptions.key;
   const jobs = [];
 
-  const res = await fetch(`https://api.seeker.company/v1/jobs?page_size=100`, {
-    headers: {
-      Authorization: `Token ${apiOptions}`,
-    },
-  });
+  // const res = await fetch(`https://api.seeker.company/v1/jobs?page_size=100`, {
+  //   headers: {
+  //     Authorization: `Token ${apiOptions}`,
+  //   },
+  // });
 
   // eslint-disable-next-line no-await-in-loop
   const data = await res.json();
@@ -47,21 +47,21 @@ exports.sourceNodes = async ({ actions }, configOptions) => {
     });
   }
 
-  jobs.forEach((job) => {
-    const jsonString = JSON.stringify(job);
+  // jobs.forEach((job) => {
+  //   const jsonString = JSON.stringify(job);
 
-    const gatsbyNode = {
-      job: { ...job },
-      id: `Seeker: ${job.id}`,
-      parent: "__SOURCE__",
-      children: [],
-      internal: {
-        type: "Seeker",
-        contentDigest: crypto
-          .createHash("md5")
-          .update(jsonString)
-          .digest("hex"),
-      },
+  //   const gatsbyNode = {
+  //     job: { ...job },
+  //     id: `Seeker: ${job.id}`,
+  //     parent: "__SOURCE__",
+  //     children: [],
+  //     internal: {
+  //       type: "Seeker",
+  //       contentDigest: crypto
+  //         .createHash("md5")
+  //         .update(jsonString)
+  //         .digest("hex"),
+  //     },
     };
 
     createNode(gatsbyNode);

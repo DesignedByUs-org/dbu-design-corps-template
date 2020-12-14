@@ -35,7 +35,7 @@
 .filterContainer {
   padding: 0 var(--page-shell-padding) var(--page-shell-padding);
   color: var(--text);
-  background-color: var(--background);
+  background-color: black;
   display: none;
   @media (min-width: $desktop) {
     display: block;

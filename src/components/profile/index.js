@@ -61,7 +61,7 @@ const Profile = (props) => {
         target="_blank"
         rel="noopener noreferrer"
         style={{
-          "--background": "var(--profile-theme-color)",
+          // "--background": "var(--profile-theme-color)",
           gridColumn: "1 / -1",
           marginTop: "auto",
           marginBottom: 0,

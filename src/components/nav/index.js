@@ -20,11 +20,11 @@ const Nav = (props) => {
           About
         </Link>
         <Link to="/nominate" className={styles.link}>
-          Nominate
+          Join
         </Link>
-        <Link to="/jobs" className={styles.link}>
+        {/* <Link to="/jobs" className={styles.link}>
           Jobs
-        </Link>
+        </Link> */}
       </nav>
     </div>
   );

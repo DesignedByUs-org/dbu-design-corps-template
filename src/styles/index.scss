@@ -1,5 +1,4 @@
 @import "variables";
-
 *,
 *:before,
 *:after {
@@ -26,7 +25,7 @@
     --element-height: 44px;
   }
   color: var(--gray);
-  background-color: var(--background);
+  background-color: #3a3a3c;
 }
 
 html,

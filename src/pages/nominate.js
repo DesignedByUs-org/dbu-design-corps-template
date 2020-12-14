@@ -70,15 +70,14 @@ class App extends React.Component {
 
     return (
       <Layout>
-        <Helmet title="Nominate | Women Who Design" />
+        <Helmet title="Join | Design Corps" />
+        
         <Nav theme="light" />
         <div className={styles.container}>
-          <h1 className={styles.h1}>Nominate</h1>
+          <h1 className={styles.h1}>Join the Design Corps Directory</h1>
 
           <p className={styles.p}>
-            If you know a woman whose voice is valuable to the design industry,
-            please fill out the form with her Twitter handle and a few words
-            about why you’re nominating her.
+          The Design Corps is an inclusive network of Science, Technology, Engineering, Arts, Math and Design changemakers If you indetify as LatinX, Black, LGBTQIA+, Indigenous, Filipino, Indian, Asian, Disabled, Aging, Veteran, Women, Girls, Femme or a fierce ally we want you!
           </p>
           {!this.state.formSubmitted && (
             <form
@@ -86,7 +85,7 @@ class App extends React.Component {
               data-netlify="true"
               name="nominations"
             >
-              <input type="hidden" name="form-name" value="nominations" />
+              {/* <input type="hidden" name="form-name" value="nominations" />
               <label htmlFor="name" className={styles.label}>
                 What’s her Twitter handle?
               </label>
@@ -117,15 +116,19 @@ class App extends React.Component {
                 required
                 onChange={this.handleChange}
                 disabled={!!this.state.nameValidationMessage}
-              />
+              /> */}
 
-              <Button
+              <Button 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdUmQXlwkRdJhiTXpAOQRMi7LCaxzuCaDe2Jl-krM1FAt1SFQ/viewform?usp=sf_link"
+                target="_blank"
+                // rel="noopener noreferrer"
                 type="submit"
                 disabled={!!this.state.nameValidationMessage}
                 arrow
                 fullWidth={false}
               >
-                Submit
+                Start
+                
               </Button>
             </form>
           )}

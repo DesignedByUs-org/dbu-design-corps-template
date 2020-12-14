@@ -180,6 +180,7 @@ const App = ({ data }) => {
                   return (
                     <Profile
                       image={designer.profile.profile_image_url_https}
+
                       fluid={designer.localFile.childImageSharp?.fluid}
                       name={designer.profile.name}
                       description={designer.profile.description}
@@ -187,12 +188,12 @@ const App = ({ data }) => {
                       hex={`#${designer.profile.profile_link_color}`}
                       key={designer.profile.screen_name}
                       contrast={designer.profile.contrast}
-                      displayUrl={
-                        designer.profile.entities.url?.urls[0].display_url
-                      }
-                      expandedUrl={
-                        designer.profile.entities.url?.urls[0].expanded_url
-                      }
+                      // displayUrl={
+                      //   designer.profile.entities.url?.urls[0].display_url
+                      // }
+                      // expandedUrl={
+                      //   designer.profile.entities.url?.urls[0].expanded_url
+                      // }
                       handle={designer.profile.screen_name}
                     />
                   );

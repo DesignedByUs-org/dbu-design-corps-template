@@ -11,17 +11,19 @@ import BlacksWhoDesign from "../friends/blackswhodesign.svg";
 import LatinxsWhoDesign from "../friends/latinxswhodesign.png";
 import PeopleOfCraft from "../friends/peopleofcraft.png";
 import QueerDesignClub from "../friends/queerdesignclub.svg";
-import IndiansWhoDesign from "../friends/indianswhodesign.svg";
-import FilipinosWhoDesign from "../friends/filipinoswhodesign.png";
+import UruguayansWhoDesign from "../friends/UruguayansWhoDesign.svg";
 import APIWhoDesign from "../friends/apiwhodesign.svg";
 import BraziliansWhoDesign from "../friends/brazilianswhodesign.svg";
+import BritsWhoDesign from "../friends/britswhodesign.svg";
+import WomenWhoDesign from "../friends/womenwhodesign.svg";
+import SpaniardsWhoDesign from "../friends/spaniardswhodesign.svg";
 import Button from "../components/button";
 
 const friends = [
   {
-    title: "API Who Design",
-    link: "https://apiwho.design/",
-    image: APIWhoDesign,
+    title: "Latinxs Who Design",
+    link: "https://latinxswhodesign.com",
+    image: LatinxsWhoDesign,
     invert: true,
   },
   {
@@ -30,10 +32,15 @@ const friends = [
     image: BlacksWhoDesign,
   },
   {
-    title: "Latinxs Who Design",
-    link: "https://latinxswhodesign.com",
-    image: LatinxsWhoDesign,
+    title: "API Who Design",
+    link: "https://apiwho.design/",
+    image: APIWhoDesign,
     invert: true,
+  },
+  {
+    title: "Uruguayans Who Design",
+    link: "https://uruguayanswho.design/",
+    image: UruguayansWhoDesign,
   },
   {
     title: "People of Craft",
@@ -47,21 +54,28 @@ const friends = [
     invert: true,
   },
   {
-    title: "Filipinos Who Design",
-    link: "http://filipinoswhodesign.club/",
-    image: FilipinosWhoDesign,
+    title: "Women Who Design",
+    link: "https://womenwho.design/",
+    image: WomenWhoDesign,
+  },
+  {
+    title: "Brits Who Design",
+    link: "https://britswho.design/",
+    image: BritsWhoDesign,
     invert: true,
     contrast: true,
   },
   {
-    title: "Indians Who Design",
-    link: "https://indianswhodesign.in/",
-    image: IndiansWhoDesign,
+    title: "Spaniards Who Design",
+    link: "https://spaniardswho.design/",
+    image: SpaniardsWhoDesign,
+    invert: true,
   },
   {
     title: "Brazilians Who Design",
     link: "https://brazilianswho.design/",
     image: BraziliansWhoDesign,
+    invert: true,
   },
 ];
 
@@ -72,26 +86,46 @@ const App = () => (
     <Helmet title="About | Women Who Design" />
     <Nav theme="light" />
     <div className={styles.container}>
-      <h1 className={styles.h1}>About this project</h1>
+    
+
+      <h1 className={styles.h1}>Design Corps Directory</h1>
       <p>
-        Women Who Design is a Twitter directory of accomplished women in the
-        design industry. It aims to help people find notable and relevant voices
-        to follow on Twitter by parsing Twitter bios for popular keywords.
+      The Design Corps Directory highlights all under represented - 
+      scientist, technologists, engineers, artists, mathmeticians and designers - 
+      in order to build Earth&apos;s largest pipeline of future inventors,  
+      designers, engineers and audacious changemakers across all industries.
+      As a inclusive practice we:
       </p>
 
-      <h2 className={styles.emphasis}>Source code</h2>
+      <h2 className={styles.emphasis}>Inspire the dream</h2>
       <p>
-        Women Who Design is happy to support new directories highlighting
-        underrepresented or marginalized groups. If you’re looking to start a
-        similar effort, feel free to fork the project on{" "}
-        <a href="https://github.com/julesforrest/womenwhodesign">GitHub</a>.
+      Aim to inspire the dreams of a new generation of public service design leaders, civic media makers and technologists.
       </p>
-      <h2 className={styles.emphasis}>Similar directories</h2>
+
+      <h2 className={styles.emphasis}>Build superhuman skills</h2>
       <p>
-        Examining diversity along the axis of gender is one small piece of the
-        puzzle. If you’ve found this site to be valuable, please take a look at
-        the work of friends in the industry building similar efforts.
+      We endevor to make S.T.E.A.M.D. skills training accesible, affordable and universal to all humans.
       </p>
+
+      <h2 className={styles.emphasis}>Illuminate paths</h2>
+      <p>
+      We clear, carve, document and share discrete paths to success through radical collaboration and open source innovation.
+      </p>
+
+      <h2 className={styles.emphasis}>Sponsor Progress</h2>
+      <p>
+      Equally, advocate, back, underwrite growth with monetary and social sponsorship into positions of power to effect change we want to see.
+      </p>
+
+      <h2 className={styles.emphasis}>Inspire Action</h2>
+      <p>
+      Appealing to the value of human life on earth and in the universe, inspire people to enlist, volunteer, donate and act with high judgement, scientific objectivity and creative ingenuity.      </p>
+
+      <h1 className={styles.h1}>A World That Works Equally For 100% of Humanity</h1>
+      <p>
+      Diversity, Equity, and Inclusion is our business model. We want to thank LatinxWhoDesign, BlacksWhoDesign and WomenWho Design teams for the inspiration to start this project and providing a template to help the design community from all backgrounds.  If you’ve found this directory valuable, consider making a donation or taking a look at similar efforts:
+      </p>
+
       <div className={styles.friendContainer}>
         {sortedFriends.map((friend) => {
           const friendImageStyles = classnames({
@@ -117,7 +151,7 @@ const App = () => (
           );
         })}
       </div>
-      <h1 className={styles.h1}>How to use</h1>
+      {/* <h1 className={styles.h1}>How to use</h1>
       <p>Here are some things Women Who Design can help you with:</p>
 
       <h2 className={styles.emphasis}>
@@ -228,45 +262,14 @@ const App = () => (
         Women Who Design is an independent project. If you’re interested in
         supporting it, please consider posting a job.
       </p>
-      <Button
+      {/* <Button
         href="https://womenwhodesign.seeker.company/submit/job"
         width="auto"
       >
         Post a job
-      </Button>
-      <h2 className={styles.emphasis}>Opt out</h2>
-      <p>
-        If you’ve been featured in the directory and you’d rather not be, please
-        send a DM to{" "}
-        <a
-          href="https://twitter.com/womenwhodesign"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @womenwhodesign
-        </a>{" "}
-        on Twitter and you will be removed.
-      </p>
-
-      <p>
-        Special thanks to{" "}
-        <a href="https://netlify.com" target="_blank" rel="noopener noreferrer">
-          Netlify
-        </a>{" "}
-        for their support.
-      </p>
-      <p>
-        <span role="img" aria-label="Peace hand emoji">
-          ✌️
-        </span>{" "}
-        <a
-          href="https://twitter.com/julesforrest"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @julesforrest
-        </a>
-      </p>
+      </Button> */}
+      
+      
       <div className={styles.backContainer}>
         <Link to="/" className={styles.backLink}>
           Back to directory
