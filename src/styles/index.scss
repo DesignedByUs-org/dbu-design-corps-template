@@ -78,7 +78,6 @@ ol,
 ul,
 li,
 fieldset,
-form,
 label,
 legend,
 table,
@@ -115,6 +114,13 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+form {
+  align-content: center;
+}
+nav {
+  padding: var(--page-shell-padding);
+  background-color: black;
 }
 /* HTML5 display-role reset for older browsers */
 article,

@@ -2,7 +2,7 @@
 
 .main {
   --background: var(--gray);
-  --text: white;
+  --text: #636366;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -23,6 +23,7 @@
 
   &WidthFull {
     width: 100%;
+    align-content: center;
     margin: auto;
     text-align: center;
   }

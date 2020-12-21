@@ -19,6 +19,9 @@ import WomenWhoDesign from "../friends/womenwhodesign.svg";
 import SpaniardsWhoDesign from "../friends/spaniardswhodesign.svg";
 import Button from "../components/button";
 
+import FilterIcon from "../icons/filter";
+
+
 const friends = [
   {
     title: "Latinxs Who Design",
@@ -84,10 +87,9 @@ const sortedFriends = sortBy(friends, (friend) => friend.title);
 const App = () => (
   <Layout>
     <Helmet title="About | Women Who Design" />
-    <Nav theme="light" />
+    <Nav theme="dark" />
     <div className={styles.container}>
-    
-
+      
       <h1 className={styles.h1}>Design Corps Directory</h1>
       <p>
       The Design Corps Directory highlights all under represented - 
@@ -97,7 +99,8 @@ const App = () => (
       As a inclusive practice we:
       </p>
 
-      <h2 className={styles.emphasis}>Inspire the dream</h2>
+      <h2 className={styles.emphasis}>Inspire the 
+      </h2>
       <p>
       Aim to inspire the dreams of a new generation of public service design leaders, civic media makers and technologists.
       </p>
@@ -125,6 +128,7 @@ const App = () => (
       <p>
       Diversity, Equity, and Inclusion is our business model. We want to thank LatinxWhoDesign, BlacksWhoDesign and WomenWho Design teams for the inspiration to start this project and providing a template to help the design community from all backgrounds.  If you’ve found this directory valuable, consider making a donation or taking a look at similar efforts:
       </p>
+      
 
       <div className={styles.friendContainer}>
         {sortedFriends.map((friend) => {
@@ -276,6 +280,7 @@ const App = () => (
         </Link>
       </div>
     </div>
+    
   </Layout>
 );
 

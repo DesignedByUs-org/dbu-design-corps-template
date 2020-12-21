@@ -1,45 +1,9 @@
 @import "../styles/variables.scss";
-.main {
-  position: static;
-  overflow-y: scroll;
-  padding: var(--page-shell-padding);
-  transition: all 0.5s ease;
-  width: 100%;
-  @media (min-width: $desktop) {
-    height: 100vh;
-  }
-}
-.sidebar {
-  overflow-y: scroll;
-  background-color: var(--gray);
-  @media (min-width: $desktop) {
-    min-width: var(--sidebar);
-    width: var(--sidebar);
-    max-width: var(--sidebar);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-}
-.filterContainer {
-  padding: 0 var(--page-shell-padding) var(--page-shell-padding);
-  color: var(--text);
-  background-color: black;
-  display: none;
-  @media (min-width: $desktop) {
-    display: block;
-    --background: var(--gray);
-    --text: white;
-    position: static;
-    transform: translateX(0);
-  }
-}
 
 .container {
   font-family: $graphik;
   max-width: 42rem;
   font-size: 16px;
-  color: white;
   padding: var(--page-shell-padding) var(--page-shell-padding) 48px
     var(--page-shell-padding);
   line-height: 1.5;
@@ -50,10 +14,12 @@
       var(--page-shell-padding);
   }
   p {
+    color: white;
     margin-bottom: 12px;
+    font-family: "Space Mono", monospace;
   }
   p:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 12px;
   }
   a {
     color: var(--gray);
@@ -67,6 +33,7 @@
 }
 
 .h1 {
+  text-transform: uppercase;
   line-height: 1.25;
   font-weight: 500;
   margin-bottom: 12px;
@@ -74,6 +41,7 @@
   font-size: 24px;
   @media (min-width: $desktop) {
     font-size: 30px;
+    color: white;
   }
 }
 .h1:not(:first-of-type) {
@@ -101,6 +69,7 @@
 }
 
 .emphasis {
+  color: white;
   font-weight: 500;
   padding-top: 12px;
   padding-bottom: 8px;

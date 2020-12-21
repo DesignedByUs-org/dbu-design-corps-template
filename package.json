@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@reach/dialog": "^0.12.0",
+    "autolinker": "^3.14.2",
     "classnames": "^2.2.6",
     "cli": "^1.0.1",
     "clickable-box": "^1.1.0",
@@ -22,6 +23,7 @@
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-feed": "^2.8.0",
     "gatsby-plugin-google-analytics": "^2.6.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet": "^3.5.0",
     "gatsby-plugin-sass": "^2.6.0",
     "gatsby-plugin-sharp": "^2.9.1",
@@ -35,8 +37,10 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "reset-css": "^5.0.1",
+    "sharp": "^0.26.3",
     "tachyons": "^4.12.0",
-    "time-ago": "^0.2.1"
+    "time-ago": "^0.2.1",
+    "twitter": "^1.7.1"
   },
   "private": true,
   "workspaces": [
