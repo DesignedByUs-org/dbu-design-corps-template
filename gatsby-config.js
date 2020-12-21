@@ -12,10 +12,10 @@ module.exports = {
     {
       resolve: "gatsby-source-twitter-profiles",
       options: {
-        consumerKey: "ccU9ncA1t0SkHQEa16Koe3F9Y",
-        consumerSecret: "a4NgEyvY8w7D28cV07XaZE1RoPLFS7PTVQ8tG8anOwj8xGAahY",
-        bearerToken: "AAAAAAAAAAAAAAAAAAAAAOltKQEAAAAAp%2BUt9DFRqxS0DaKzT%2B6wYWTz91w%3DU7QT71JvnmXajEFbWbSJe54dZ6bp5YAkI3KSXJyy2H8d3pYewM",
-        twitterIdForFollowingList: "1194121866274721792",
+        consumerKey: "L57UqKhtOUMs1d6OlFsukQqHI",
+        consumerSecret: "EJNX7VBYntFqpUSogC0hCIBFcXDqoIraywSCzEmTHzmbGoPP04",
+        bearerToken: "AAAAAAAAAAAAAAAAAAAAAOH9KgEAAAAAVLvqXLj9bVwrQn3i0xwTIUvV9Yc%3Da1FxKJBXaKEhKuFZejm1CO5dy8BYwh4G2LCpLzXUo5Key8FPBU",
+        twitterIdForFollowingList: "1337449516946087938",
       },
     },
     // {
@@ -62,9 +62,19 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        feeds: [
+        fonts: [
+          `Space Mono`,
+          `source sans pro\:400`, // you can also specify font weights and styles 
+        ],
+        display: "swap",
+      },
+    },
+    // {
+    //   resolve: `gatsby-plugin-feed`,
+    //   options: {
+    //     feeds: [
           // {
             // serialize: ({ query: { allSeeker } }) => {
             //   return allSeeker.edges.map((edge) => {
@@ -103,8 +113,8 @@ module.exports = {
             // output: "/rss.xml",
             // title: "Women Who Design Job Board",
           // },
-        ],
-      },
-    },
+      //   ],
+      // },
+    // },
   ],
 };
