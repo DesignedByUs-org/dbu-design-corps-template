@@ -1,8 +1,9 @@
 @import "../styles/variables.scss";
+@import "../styles/global.css";
 
 .container {
   font-family: $graphik;
-  max-width: 42rem;
+  max-width: 50rem;
   font-size: 16px;
   padding: var(--page-shell-padding) var(--page-shell-padding) 48px
     var(--page-shell-padding);
@@ -13,16 +14,17 @@
     padding: var(--page-shell-padding) var(--page-shell-padding) 64px
       var(--page-shell-padding);
   }
+
   p {
     color: white;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     font-family: "Space Mono", monospace;
   }
   p:last-of-type {
     margin-bottom: 12px;
   }
   a {
-    color: var(--gray);
+    color: white;
     &:focus {
       outline: none;
       border-radius: 1px;
@@ -34,13 +36,14 @@
 
 .h1 {
   text-transform: uppercase;
+  font-family: "Sifonn Basic 2";
   line-height: 1.25;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 12px;
   margin-top: 48px;
   font-size: 24px;
   @media (min-width: $desktop) {
-    font-size: 30px;
+    font-size: 50px;
     color: white;
   }
 }
@@ -49,14 +52,37 @@
 }
 
 .h2 {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.25;
-  padding-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Sifonn Basic 2";
+  font-weight: 400;
   position: relative;
-  --background: var(--gray);
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 8px;
+
+  @media (min-width: $desktop) {
+    padding-top: 24px;
+  }
 }
 
+.h2#sponsor {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Sifonn Basic 2";
+  font-weight: 400;
+  position: relative;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 8px;
+
+  @media (min-width: $desktop) {
+    padding: auto;
+  }
+}
+.h2:last-of-type {
+  margin-top: 96px;
+}
 .jobTitle {
   font-weight: 500;
   line-height: 1.25;
@@ -311,6 +337,7 @@
   padding: 16px;
   height: 180px;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .friendTitle {
@@ -336,4 +363,23 @@
 }
 .friendImageContrast {
   filter: invert(1) grayscale(1) contrast(10);
+}
+
+.donate {
+  // background-color: #1e1e1e;
+  // --background: #1e1e1e;
+  --text: white;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // text-decoration: none;
+  // padding-top: 8px;
+  padding: 50px;
+  // padding-right: 12px;
+  // margin: auto;
+
+  @media (min-width: $desktop) {
+    // padding-top: 8px;
+  }
 }

@@ -38,6 +38,8 @@ const Layout = ({ children }) => (
         },
       ]}
     />
+
+    
     {children}
   </>
 );

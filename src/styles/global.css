@@ -40,6 +40,11 @@
   font-stretch: normal;
 }
 
+@font-face {
+  font-family: "Sifonn Basic 2";
+  src: url("../fonts/Sifonn_Basic\ 2.otf");
+}
+
 body {
   color: 222222c;
 }

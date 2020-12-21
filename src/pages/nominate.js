@@ -70,11 +70,14 @@ class App extends React.Component {
 
     return (
       <Layout>
-        <Helmet title="Join | Design Corps" />
-        
-        <Nav theme="light" />
+        <Helmet title="Join | Women Who Design" />
+        <Nav theme="dark" />
         <div className={styles.container}>
-          <h1 className={styles.h1}>Join the Design Corps Directory</h1>
+        
+          <h1 className={styles.h1}>Join the
+          Design Corps Directory
+          </h1>
+          
 
           <p className={styles.p}>
           The Design Corps is an inclusive network of Science, Technology, Engineering, Arts, Math and Design changemakers If you indetify as LatinX, Black, LGBTQIA+, Indigenous, Filipino, Indian, Asian, Disabled, Aging, Veteran, Women, Girls, Femme or a fierce ally we want you!
@@ -118,7 +121,7 @@ class App extends React.Component {
                 disabled={!!this.state.nameValidationMessage}
               /> */}
 
-              <Button 
+              <Button style={{color : '#68CD67'}}
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdUmQXlwkRdJhiTXpAOQRMi7LCaxzuCaDe2Jl-krM1FAt1SFQ/viewform?usp=sf_link"
                 target="_blank"
                 // rel="noopener noreferrer"

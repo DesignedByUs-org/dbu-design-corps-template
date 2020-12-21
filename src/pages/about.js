@@ -11,15 +11,16 @@ import BlacksWhoDesign from "../friends/blackswhodesign.svg";
 import LatinxsWhoDesign from "../friends/latinxswhodesign.png";
 import PeopleOfCraft from "../friends/peopleofcraft.png";
 import QueerDesignClub from "../friends/queerdesignclub.svg";
-import UruguayansWhoDesign from "../friends/UruguayansWhoDesign.svg";
+import UruguayansWhoDesign from "../friends/Uruguayans.svg";
 import APIWhoDesign from "../friends/apiwhodesign.svg";
 import BraziliansWhoDesign from "../friends/brazilianswhodesign.svg";
-import BritsWhoDesign from "../friends/britswhodesign.svg";
-import WomenWhoDesign from "../friends/womenwhodesign.svg";
-import SpaniardsWhoDesign from "../friends/spaniardswhodesign.svg";
-import Button from "../components/button";
+import BritsWhoDesign from "../friends/brits.svg";
+import WomenWhoDesign from "../friends/women.svg";
+import SpaniardsWhoDesign from "../friends/spaniards.svg";
 
-import FilterIcon from "../icons/filter";
+// import Button from "../components/button";
+
+
 
 
 const friends = [
@@ -30,7 +31,6 @@ const friends = [
     invert: true,
   },
   {
-    title: "Blacks Who Design",
     link: "https://blackswho.design/",
     image: BlacksWhoDesign,
   },
@@ -41,44 +41,34 @@ const friends = [
     invert: true,
   },
   {
-    title: "Uruguayans Who Design",
     link: "https://uruguayanswho.design/",
     image: UruguayansWhoDesign,
   },
   {
-    title: "People of Craft",
     link: "https://peopleofcraft.com/",
     image: PeopleOfCraft,
   },
   {
-    title: "Queer Design Club",
     link: "https://queerdesign.club/",
     image: QueerDesignClub,
     invert: true,
   },
   {
-    title: "Women Who Design",
     link: "https://womenwho.design/",
     image: WomenWhoDesign,
   },
   {
-    title: "Brits Who Design",
     link: "https://britswho.design/",
     image: BritsWhoDesign,
-    invert: true,
-    contrast: true,
   },
   {
-    title: "Spaniards Who Design",
     link: "https://spaniardswho.design/",
     image: SpaniardsWhoDesign,
-    invert: true,
   },
   {
     title: "Brazilians Who Design",
     link: "https://brazilianswho.design/",
     image: BraziliansWhoDesign,
-    invert: true,
   },
 ];
 
@@ -96,39 +86,48 @@ const App = () => (
       scientist, technologists, engineers, artists, mathmeticians and designers - 
       in order to build Earth&apos;s largest pipeline of future inventors,  
       designers, engineers and audacious changemakers across all industries.
-      As a inclusive practice we:
+      <p style={{ fontWeight: 'bold' }}>As an inclusive practice we:</p>
       </p>
 
-      <h2 className={styles.emphasis}>Inspire the 
-      </h2>
+      <h2 className={styles.h2}>Inspire the <h2 style={{ color: '#50E3C2', display: 'inline'}}>dream</h2></h2>
       <p>
       Aim to inspire the dreams of a new generation of public service design leaders, civic media makers and technologists.
       </p>
 
-      <h2 className={styles.emphasis}>Build superhuman skills</h2>
+      <h2 className={styles.h2}>Build superhuman <h2 style={{ color: '#FF375F', display: 'inline'}}>skills</h2></h2>
       <p>
       We endevor to make S.T.E.A.M.D. skills training accesible, affordable and universal to all humans.
       </p>
 
-      <h2 className={styles.emphasis}>Illuminate paths</h2>
+      <h2 className={styles.h2}>Illuminate <h2 style={{ color: '#BF5AF2', display: 'inline'}}>paths</h2></h2>
       <p>
       We clear, carve, document and share discrete paths to success through radical collaboration and open source innovation.
       </p>
 
-      <h2 className={styles.emphasis}>Sponsor Progress</h2>
+      <h2 className={styles.h2}>Sponsor <h2 style={{ color: '#64D2FF', display: 'inline'}}>Progress</h2></h2>
       <p>
       Equally, advocate, back, underwrite growth with monetary and social sponsorship into positions of power to effect change we want to see.
       </p>
 
-      <h2 className={styles.emphasis}>Inspire Action</h2>
+      <h2 className={styles.h2}>Inspire <h2 style={{ color: '#68CD67', display: 'inline'}}>Action</h2></h2>
       <p>
-      Appealing to the value of human life on earth and in the universe, inspire people to enlist, volunteer, donate and act with high judgement, scientific objectivity and creative ingenuity.      </p>
+      Appealing to the value of human life on earth and in the universe, inspire people to enlist, volunteer, donate and act with high judgement, scientific objectivity and creative ingenuity.      
+      </p>
 
-      <h1 className={styles.h1}>A World That Works Equally For 100% of Humanity</h1>
+      <div className={styles.donate}>
+        <h2 className={styles.h2}>Sponsor the design corp</h2>
+      <p>
+      The Design Corps is a social benefit business. If you’re interested in sponsoring progress, post a job or make a donation.
+      </p>
+
+      </div>
+    
+      <h2 className={styles.h2}>A World That Works Equally For 100% of Humanity</h2>
       <p>
       Diversity, Equity, and Inclusion is our business model. We want to thank LatinxWhoDesign, BlacksWhoDesign and WomenWho Design teams for the inspiration to start this project and providing a template to help the design community from all backgrounds.  If you’ve found this directory valuable, consider making a donation or taking a look at similar efforts:
       </p>
       
+   
 
       <div className={styles.friendContainer}>
         {sortedFriends.map((friend) => {
@@ -280,7 +279,6 @@ const App = () => (
         </Link>
       </div>
     </div>
-    
   </Layout>
 );
 

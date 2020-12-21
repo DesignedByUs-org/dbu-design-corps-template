@@ -4,8 +4,8 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: "Women Who Design",
-    description: `Product design, design systems and web development.`,
+    title: "Designed By Us Design Corp",
+    description: `Directory highlights all under represented - scientist, technologists, engineers, artists, mathmeticians and designers`,
     siteUrl: `https://womenwho.design`,
   },
   plugins: [
@@ -46,7 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/favicon.png",
+        logo: "./src/dbu-favicon.png",
         injectHTML: true,
         icons: {
           android: false,
@@ -68,9 +68,9 @@ module.exports = {
           `Space Mono`,
           `source sans pro\:400`, // you can also specify font weights and styles 
         ],
-        display: "swap",
       },
     },
+  
     // {
     //   resolve: `gatsby-plugin-feed`,
     //   options: {
