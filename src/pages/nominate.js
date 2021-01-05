@@ -14,6 +14,7 @@ const encode = (data) => {
     .join("&");
 };
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -25,6 +26,8 @@ class App extends React.Component {
       nameValidationMessage: null,
     };
   }
+  
+  
 
   searchForName = (name) => {
     const formattedName = name.replace("@", "").trim();
@@ -70,7 +73,7 @@ class App extends React.Component {
 
     return (
       <Layout>
-        <Helmet title="Join | Women Who Design" />
+        <Helmet title="Join | DBU Design Corps" />
         <Nav theme="dark" />
         <div className={styles.container}>
         
@@ -158,16 +161,16 @@ class App extends React.Component {
 
 export default App;
 
-export const pageQuery = graphql`
-  query Nominate {
-    allTwitterProfile {
-      edges {
-        node {
-          profile {
-            screen_name
-          }
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query Nominate {
+//     allTwitterProfile {
+//       edges {
+//         node {
+//           profile {
+//             screen_name
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;

@@ -17,8 +17,7 @@ import BraziliansWhoDesign from "../friends/brazilianswhodesign.svg";
 import BritsWhoDesign from "../friends/brits.svg";
 import WomenWhoDesign from "../friends/women.svg";
 import SpaniardsWhoDesign from "../friends/spaniards.svg";
-
-// import Button from "../components/button";
+import Button from "../components/button/secondbutton";
 
 
 
@@ -76,10 +75,9 @@ const sortedFriends = sortBy(friends, (friend) => friend.title);
 
 const App = () => (
   <Layout>
-    <Helmet title="About | Women Who Design" />
+    <Helmet title="About | DBU Design Corps" />
     <Nav theme="dark" />
     <div className={styles.container}>
-      
       <h1 className={styles.h1}>Design Corps Directory</h1>
       <p>
       The Design Corps Directory highlights all under represented - 
@@ -110,17 +108,25 @@ const App = () => (
       </p>
 
       <h2 className={styles.h2}>Inspire <h2 style={{ color: '#68CD67', display: 'inline'}}>Action</h2></h2>
-      <p>
+      <p style={{paddingBottom: '50px'}}>
       Appealing to the value of human life on earth and in the universe, inspire people to enlist, volunteer, donate and act with high judgement, scientific objectivity and creative ingenuity.      
       </p>
 
-      <div className={styles.donate}>
-        <h2 className={styles.h2}>Sponsor the design corp</h2>
-      <p>
+      <div>
+        <h2 className={styles.h2} style={{backgroundColor: '#1e1e1e', marginTop: '3px', paddingLeft: '20px', paddingRight: '8px'}}>Sponsor the design corp</h2>
+      <p style={{backgroundColor: '#1e1e1e', paddingLeft: '20px', paddingBottom: '20px', paddingRight: '20px'}}>
       The Design Corps is a social benefit business. If you’re interested in sponsoring progress, post a job or make a donation.
       </p>
-
-      </div>
+{/* <Button onClick={() => {console.log("Sends you to donation page")}}
+// type="button"
+// buttonStyle="btn--primary--solid"
+// buttonSize="btn--medium"
+>
+  Donate
+</Button> */}
+      
+  </div>
+    
     
       <h2 className={styles.h2}>A World That Works Equally For 100% of Humanity</h2>
       <p>

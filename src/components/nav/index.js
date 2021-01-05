@@ -10,6 +10,10 @@ const Nav = (props) => {
       style={{
         "--background": props.theme === "dark" && "var(--gray)",
         "--text": props.theme === "dark" && "#fff",
+        "height": "180vw",
+        "display": "inline-block",
+        // "position": "fixed",
+        "top": "0",
       }}
     >
       <Link to="/">

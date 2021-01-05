@@ -1,8 +1,10 @@
 @import "../../styles/variables.scss";
 
 .container {
+  display: inline-block;
+  width: 20em;
+  height: 100%;
   padding: var(--page-shell-padding);
-
   font-family: $pitch;
   color: black;
   background-color: black;

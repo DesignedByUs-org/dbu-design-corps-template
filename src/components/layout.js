@@ -5,14 +5,14 @@ import "../styles/index.scss";
 const Layout = ({ children }) => (
   <>
     <Helmet
-      title="Women Who Design"
+      title="DesignedByUs | Design Corps"
       meta={[
         {
           property: "description",
           content:
             "A Twitter directory of accomplished women in the design industry.",
         },
-        { property: "og:title", content: "Women Who Design" },
+        { property: "og:title", content: "DBU Design Corps" },
         {
           property: "og:description",
           content:
