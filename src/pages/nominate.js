@@ -7,6 +7,7 @@ import styles from "./about.module.scss";
 import Layout from "../components/layout";
 import Button from "../components/button";
 import "reset-css";
+// import { ReactTypeformEmbed } from 'react-typeform-embed';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -17,8 +18,11 @@ const encode = (data) => {
 
 class App extends React.Component {
   constructor(props) {
+    // render() {
+    //   return <ReactTypeformEmbed url="https://demo.typeform.com/to/njdbt5" />;
+    // };
     super(props);
-    this.designerArray = props.data.allTwitterProfile.edges;
+    // this.designerArray = props.data.allTwitterProfile.edges;
     this.state = {
       name: "",
       reason: "",
@@ -87,9 +91,9 @@ class App extends React.Component {
           </p>
           {!this.state.formSubmitted && (
             <form
-              onSubmit={this.handleSubmit}
-              data-netlify="true"
-              name="nominations"
+              // onSubmit={this.handleSubmit}
+              // data-netlify="true"
+              // name="nominations"
             >
               {/* <input type="hidden" name="form-name" value="nominations" />
               <label htmlFor="name" className={styles.label}>
@@ -124,7 +128,7 @@ class App extends React.Component {
                 disabled={!!this.state.nameValidationMessage}
               /> */}
 
-              <Button style={{color : '#68CD67'}}
+              {/* <Button style={{color : '#68CD67'}}
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdUmQXlwkRdJhiTXpAOQRMi7LCaxzuCaDe2Jl-krM1FAt1SFQ/viewform?usp=sf_link"
                 target="_blank"
                 // rel="noopener noreferrer"
@@ -135,7 +139,24 @@ class App extends React.Component {
               >
                 Start
                 
-              </Button>
+              </Button> */}
+              {/* <div styles={{float: 'center'}} href="https://docs.google.com/forms/d/e/1FAIpQLSdUmQXlwkRdJhiTXpAOQRMi7LCaxzuCaDe2Jl-krM1FAt1SFQ/viewform?usp=sf_link">
+               <button style={{width: '100%', backgroundColor: '#68CD67', alignContent: 'right', color: '#000000', padding: '16px 31px', top: '1px'}}> START 
+      </button>
+      </div> */}
+      <Button
+      href={"https://designedbyus.typeform.com/to/HU5qHY"}
+      style={{
+      width: '100%', 
+      backgroundColor: '#68CD67', 
+      alignContent: 'right', 
+      color: '#000000', 
+      padding: '16px 31px', 
+      top: '1px'
+      }}>
+        <span className={styles.linkText}>START</span>
+      </Button>
+      
             </form>
           )}
           {this.state.formSubmitted && (
@@ -144,7 +165,7 @@ class App extends React.Component {
                 <span role="img" aria-label="Confetti emoji">
                   🎉
                 </span>{" "}
-                Thanks for nominating!
+                Thanks for joining!
               </p>
             </div>
           )}

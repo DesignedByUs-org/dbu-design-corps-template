@@ -17,7 +17,7 @@ import BraziliansWhoDesign from "../friends/brazilianswhodesign.svg";
 import BritsWhoDesign from "../friends/brits.svg";
 import WomenWhoDesign from "../friends/women.svg";
 import SpaniardsWhoDesign from "../friends/spaniards.svg";
-import Button from "../components/button/secondbutton";
+// import Button from "../components/button/secondbutton";
 
 
 
@@ -117,10 +117,18 @@ const App = () => (
       <p style={{backgroundColor: '#1e1e1e', paddingLeft: '20px', paddingBottom: '20px', paddingRight: '20px'}}>
       The Design Corps is a social benefit business. If you’re interested in sponsoring progress, post a job or make a donation.
       </p>
+      <div style={{float: 'right', backgroundColor: '#1e1e1e'}}>
+      <button style={{backgroundColor: '#68CD67', alignContent: 'right', color: '#000000', padding: '16px 31px', top: '1px'}}>
+        POST A JOB
+      </button>
+     <button style={{backgroundColor: '#68CD67', alignContent: 'right', color: '#000000', padding: '16px 31px', top: '1px'}}> 
+      MAKE A DONATION
+      </button>
+      </div>
 {/* <Button onClick={() => {console.log("Sends you to donation page")}}
-// type="button"
-// buttonStyle="btn--primary--solid"
-// buttonSize="btn--medium"
+type="button"
+buttonStyle="btn--primary--solid"
+buttonSize="btn--medium"
 >
   Donate
 </Button> */}

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@reach/dialog": "^0.12.0",
+    "@typeform/embed": "^0.33.2",
     "autolinker": "^3.14.2",
     "bootstrap": "^4.5.3",
     "classnames": "^2.2.6",
@@ -32,6 +33,7 @@
     "gatsby-remark-smartypants": "^2.5.0",
     "gatsby-source-filesystem": "^2.6.1",
     "gatsby-transformer-sharp": "^2.7.0",
+    "gh-pages": "^3.1.0",
     "lodash": "^4.17.20",
     "marked": "^1.2.5",
     "prop-types": "^15.7.2",
@@ -39,6 +41,7 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-typeform-embed": "^0.2.1",
     "reset-css": "^5.0.1",
     "sharp": "^0.26.3",
     "tachyons": "^4.12.0",
