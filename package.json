@@ -8,7 +8,7 @@
     "serve": "gatsby serve",
     "test": "eslint . --ext .js --ext .jsx",
     "format": "prettier \"**/*.{js,jsx,ts,tsx,css,sass,scss,json,md,mdx,html}\" --write",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && master -d public"
   },
   "dependencies": {
     "@reach/dialog": "^0.12.0",
