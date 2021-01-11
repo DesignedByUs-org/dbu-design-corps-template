@@ -147,11 +147,11 @@ class App extends React.Component {
       <Button
       href={"https://designedbyus.typeform.com/to/HU5qHY"}
       style={{
-      width: '100%', 
+      width: '30%', 
+      display: 'flex',
+      justifyContent: 'center',
       backgroundColor: '#68CD67', 
-      alignContent: 'right', 
       color: '#000000', 
-      padding: '16px 31px', 
       top: '1px'
       }}>
         <span className={styles.linkText}>START</span>

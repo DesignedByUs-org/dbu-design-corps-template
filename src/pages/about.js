@@ -17,7 +17,7 @@ import BraziliansWhoDesign from "../friends/brazilianswhodesign.svg";
 import BritsWhoDesign from "../friends/brits.svg";
 import WomenWhoDesign from "../friends/women.svg";
 import SpaniardsWhoDesign from "../friends/spaniards.svg";
-// import Button from "../components/button/secondbutton";
+import Button from "../components/button/index";
 
 
 
@@ -112,28 +112,24 @@ const App = () => (
       Appealing to the value of human life on earth and in the universe, inspire people to enlist, volunteer, donate and act with high judgement, scientific objectivity and creative ingenuity.      
       </p>
 
-      <div>
-        <h2 className={styles.h2} style={{backgroundColor: '#1e1e1e', marginTop: '3px', paddingLeft: '20px', paddingRight: '8px'}}>Sponsor the design corp</h2>
-      <p style={{backgroundColor: '#1e1e1e', paddingLeft: '20px', paddingBottom: '20px', paddingRight: '20px'}}>
+      <div style={{backgroundColor: '#1e1e1e', paddingLeft: '20px', paddingBottom: '80px', paddingRight: '20px'}}>
+        <h2 className={styles.h2}>Sponsor the design corp</h2>
+      <p>
       The Design Corps is a social benefit business. If you’re interested in sponsoring progress, post a job or make a donation.
       </p>
-      <div style={{float: 'right', backgroundColor: '#1e1e1e'}}>
-      <button style={{backgroundColor: '#68CD67', alignContent: 'right', color: '#000000', padding: '16px 31px', top: '1px'}}>
-        POST A JOB
-      </button>
-     <button style={{backgroundColor: '#68CD67', alignContent: 'right', color: '#000000', padding: '16px 31px', top: '1px'}}> 
-      MAKE A DONATION
-      </button>
+      <Button
+      href={"https://designedbyus.org/donate"}
+      style={{
+      display: 'inline-block',
+      float: 'right',
+      width: '30%', 
+      backgroundColor: '#68CD67',  
+      color: '#000000', 
+      top: '1px'
+      }}>
+        <span className={styles.linkText}>Make a donation</span>
+      </Button>
       </div>
-{/* <Button onClick={() => {console.log("Sends you to donation page")}}
-type="button"
-buttonStyle="btn--primary--solid"
-buttonSize="btn--medium"
->
-  Donate
-</Button> */}
-      
-  </div>
     
     
       <h2 className={styles.h2}>A World That Works Equally For 100% of Humanity</h2>

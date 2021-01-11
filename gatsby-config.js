@@ -6,8 +6,8 @@ module.exports = {
   siteMetadata: {
     title: "Designed By Us Design Corp",
     description: `Directory highlights all under represented - scientist, technologists, engineers, artists, mathmeticians and designers`,
-    siteUrl: `https://womenwho.design`,
-    // pathPrefix: 'https://annajt178.github.io/design-corps-test/'
+    // siteUrl: `https://womenwho.design`,
+    pathPrefix: "/design-corps-test",
   },
   plugins: [
     {
