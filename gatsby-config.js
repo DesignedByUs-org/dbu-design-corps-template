@@ -4,10 +4,10 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: "Designed By Us Design Corp",
-    description: `Directory highlights all under represented - scientist, technologists, engineers, artists, mathmeticians and designers`,
+    // title: "Designed By Us Design Corp",
+    // description: `Directory highlights all under represented - scientist, technologists, engineers, artists, mathmeticians and designers`,
     // siteUrl: `https://womenwho.design`,
-    pathPrefix: "/design-corps-test",
+    pathPrefix: "/design-corps-test"
   },
   plugins: [
     {
@@ -41,7 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.WWD_GOOGLE_ANALYTICS_ID,
+      trackingId: process.env.WWD_GOOGLE_ANALYTICS_ID,
       },
     },
     {
