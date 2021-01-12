@@ -76,7 +76,7 @@ const sortedFriends = sortBy(friends, (friend) => friend.title);
 const App = () => (
   <Layout>
     <Helmet title="About | DBU Design Corps" />
-    <Nav theme="dark" />
+    <Nav theme="dark"/>
     <div className={styles.container}>
       <h1 className={styles.h1}>Design Corps Directory</h1>
       <p>
@@ -108,7 +108,7 @@ const App = () => (
       </p>
 
       <h2 className={styles.h2}>Inspire <h2 style={{ color: '#68CD67', display: 'inline'}}>Action</h2></h2>
-      <p style={{paddingBottom: '50px'}}>
+      <p style={{paddingBottom: '40px'}}>
       Appealing to the value of human life on earth and in the universe, inspire people to enlist, volunteer, donate and act with high judgement, scientific objectivity and creative ingenuity.      
       </p>
 
@@ -125,7 +125,8 @@ const App = () => (
       width: '30%', 
       backgroundColor: '#68CD67',  
       color: '#000000', 
-      top: '1px'
+      top: '1px',
+      fontWeight: 'bold'
       }}>
         <span className={styles.linkText}>Make a donation</span>
       </Button>
