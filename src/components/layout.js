@@ -21,7 +21,7 @@ const Layout = ({ children }) => (
 
         {
           property: "og:image",
-          content: "https://womenwho.design/opengraph.png",
+          content: "https://reverent-spence-db3a88.netlify.app/opengraph.png",
         },
         {
           property: "og:url",
