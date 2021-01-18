@@ -6,8 +6,7 @@ const Loader = () => {
     <div className={styles.container}>
       <div>
         <h1 className={styles.heading}>
-          Women Who Design is a Twitter directory of accomplished women in the
-          design industry
+        Directory highlights all under represented - scientist, technologists, engineers, artists, mathmeticians and designers.
         </h1>
         <div className={styles.spinner} />
       </div>
