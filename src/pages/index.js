@@ -405,32 +405,36 @@ export const pageQuery = graphql`
               }
               position {
                 ceo
-                author
-                director
+                inventor
+                distinguisheddesigner
                 founder
-                freelance
-                head
-                lead
-                manager
+                apprentice
+                designfellow
+                cdo
+                corps
                 speaker
                 vp
               }
               expertise {
-                art
-                content
-                creative
-                systems
-                developer
+                datascience
+                prodmanager
+                designtech
+                animator
+                cognitive
                 engineer
-                graphic
-                illustrator
-                letter
-                product
+                industrial
+                technologist
+                scientist
+                interior
                 research
-                typeface
-                ux
-                web
+                artist
+                fashion
+                architect
                 writer
+                human
+                voice
+                sound
+                gesture
               }
             }
             entities {
@@ -446,14 +450,14 @@ export const pageQuery = graphql`
       }
     }
 
-    tagCountArt: allTwitterProfile(
-      filter: { profile: { tags: { expertise: { art: { eq: true } } } } }
+    tagCountDatascience: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { datascience: { eq: true } } } } }
     ) {
       totalCount
     }
 
-    tagCountAuthor: allTwitterProfile(
-      filter: { profile: { tags: { position: { author: { eq: true } } } } }
+    tagCountInventor: allTwitterProfile(
+      filter: { profile: { tags: { position: { inventor: { eq: true } } } } }
     ) {
       totalCount
     }
@@ -464,26 +468,26 @@ export const pageQuery = graphql`
       totalCount
     }
 
-    tagCountContent: allTwitterProfile(
-      filter: { profile: { tags: { expertise: { content: { eq: true } } } } }
+    tagCountProdmanager: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { prodmanager: { eq: true } } } } }
     ) {
       totalCount
     }
 
-    tagCountCreative: allTwitterProfile(
-      filter: { profile: { tags: { expertise: { creative: { eq: true } } } } }
+    tagCountDesigntech: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { designtech: { eq: true } } } } }
     ) {
       totalCount
     }
 
-    tagCountDeveloper: allTwitterProfile(
-      filter: { profile: { tags: { expertise: { developer: { eq: true } } } } }
+    tagCountCognitive: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { cognitive: { eq: true } } } } }
     ) {
       totalCount
     }
 
-    tagCountDirector: allTwitterProfile(
-      filter: { profile: { tags: { position: { director: { eq: true } } } } }
+    tagCountDistinguisheddesigner: allTwitterProfile(
+      filter: { profile: { tags: { position: { distinguisheddesigner: { eq: true } } } } }
     ) {
       totalCount
     }
@@ -500,52 +504,52 @@ export const pageQuery = graphql`
       totalCount
     }
 
-    tagCountFreelance: allTwitterProfile(
-      filter: { profile: { tags: { position: { freelance: { eq: true } } } } }
+    tagCountApprentice: allTwitterProfile(
+      filter: { profile: { tags: { position: { apprentice: { eq: true } } } } }
     ) {
       totalCount
     }
 
-    tagCountGraphic: allTwitterProfile(
-      filter: { profile: { tags: { expertise: { graphic: { eq: true } } } } }
+    tagCountIndustrial: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { industrial: { eq: true } } } } }
     ) {
       totalCount
     }
 
-    tagCountHead: allTwitterProfile(
-      filter: { profile: { tags: { position: { head: { eq: true } } } } }
+    tagCountDesignfellow: allTwitterProfile(
+      filter: { profile: { tags: { position: { designfellow: { eq: true } } } } }
     ) {
       totalCount
     }
 
-    tagCountIllustrator: allTwitterProfile(
+    tagCountTechnologist: allTwitterProfile(
       filter: {
-        profile: { tags: { expertise: { illustrator: { eq: true } } } }
+        profile: { tags: { expertise: { technologist: { eq: true } } } }
       }
     ) {
       totalCount
     }
 
-    tagCountLead: allTwitterProfile(
-      filter: { profile: { tags: { position: { lead: { eq: true } } } } }
+    tagCountCdo: allTwitterProfile(
+      filter: { profile: { tags: { position: { cdo: { eq: true } } } } }
     ) {
       totalCount
     }
 
-    tagCountLetter: allTwitterProfile(
-      filter: { profile: { tags: { expertise: { letter: { eq: true } } } } }
+    tagCountScientist: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { scientist: { eq: true } } } } }
     ) {
       totalCount
     }
 
-    tagCountManager: allTwitterProfile(
-      filter: { profile: { tags: { position: { manager: { eq: true } } } } }
+    tagCountCorps: allTwitterProfile(
+      filter: { profile: { tags: { position: { corps: { eq: true } } } } }
     ) {
       totalCount
     }
 
-    tagCountProduct: allTwitterProfile(
-      filter: { profile: { tags: { expertise: { product: { eq: true } } } } }
+    tagCountInterior: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { interior: { eq: true } } } } }
     ) {
       totalCount
     }
@@ -562,14 +566,14 @@ export const pageQuery = graphql`
       totalCount
     }
 
-    tagCountSystems: allTwitterProfile(
-      filter: { profile: { tags: { expertise: { systems: { eq: true } } } } }
+    tagCountAnimator: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { animator: { eq: true } } } } }
     ) {
       totalCount
     }
 
-    tagCountUx: allTwitterProfile(
-      filter: { profile: { tags: { expertise: { ux: { eq: true } } } } }
+    tagCountFashion: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { fashion: { eq: true } } } } }
     ) {
       totalCount
     }
@@ -580,8 +584,8 @@ export const pageQuery = graphql`
       totalCount
     }
 
-    tagCountWeb: allTwitterProfile(
-      filter: { profile: { tags: { expertise: { web: { eq: true } } } } }
+    tagCountArchitect: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { architect: { eq: true } } } } }
     ) {
       totalCount
     }
@@ -591,6 +595,31 @@ export const pageQuery = graphql`
     ) {
       totalCount
     }
+
+    tagCountHuman: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { human: { eq: true } } } } }
+    ) {
+      totalCount
+    }
+
+    tagCountVoice: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { voice: { eq: true } } } } }
+    ) {
+      totalCount
+    }
+
+    tagCountSound: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { sound: { eq: true } } } } }
+    ) {
+      totalCount
+    }
+
+    tagCountGesture: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { gesture: { eq: true } } } } }
+    ) {
+      totalCount
+    }
+
     tagCountBa: allTwitterProfile(
       filter: { profile: { tags: { location: { ba: { eq: true } } } } }
     ) {
@@ -631,8 +660,8 @@ export const pageQuery = graphql`
     ) {
       totalCount
     }
-    tagCountTypeface: allTwitterProfile(
-      filter: { profile: { tags: { expertise: { typeface: { eq: true } } } } }
+    tagCountArtist: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { artist: { eq: true } } } } }
     ) {
       totalCount
     }

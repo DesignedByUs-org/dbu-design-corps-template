@@ -1,12 +1,12 @@
 const categories = [
   {
-    title: "Art directors",
-    id: "art",
+    title: "Data Scientists",
+    id: "datascience",
     expertise: true,
   },
   {
-    title: "Authors",
-    id: "author",
+    title: "Inventors",
+    id: "inventor",
     position: true,
   },
   {
@@ -15,28 +15,28 @@ const categories = [
     position: true,
   },
   {
-    title: "Content strategists",
-    id: "content",
+    title: "Product Managers",
+    id: "prodmanager",
     expertise: true,
   },
   {
-    title: "Creative directors",
-    id: "creative",
+    title: "Design Technologists",
+    id: "designtech",
     expertise: true,
   },
   {
-    title: "Design system-ers",
-    id: "systems",
+    title: "Animators",
+    id: "animator",
     expertise: true,
   },
   {
-    title: "Directors",
-    id: "director",
+    title: "Distinguished Designers",
+    id: "distinguisheddesigner",
     position: true,
   },
   {
-    title: "Developers",
-    id: "developer",
+    title: "Cognitive Experience Designers",
+    id: "cognitive",
     expertise: true,
   },
   {
@@ -50,43 +50,43 @@ const categories = [
     position: true,
   },
   {
-    title: "Freelancers",
-    id: "freelance",
+    title: "Apprentices",
+    id: "apprentice",
     position: true,
   },
   {
-    title: "Graphic designers",
-    id: "graphic",
+    title: "Industrial Designers",
+    id: "industrial",
     expertise: true,
   },
   {
-    title: "Heads of",
-    id: "head",
+    title: "Design Fellows",
+    id: "designfellow",
     position: true,
   },
   {
-    title: "Illustrators",
-    id: "illustrator",
+    title: "Technologists",
+    id: "technologist",
     expertise: true,
   },
   {
-    title: "Leads",
-    id: "lead",
+    title: "CDOs",
+    id: "cdo",
     position: true,
   },
   {
-    title: "Letterers",
-    id: "letter",
+    title: "Scientists",
+    id: "scientist",
     expertise: true,
   },
   {
-    title: "Managers",
-    id: "manager",
+    title: "Design Corps",
+    id: "corps",
     position: true,
   },
   {
-    title: "Product designers",
-    id: "product",
+    title: "Interior designers",
+    id: "interior",
     expertise: true,
   },
   {
@@ -100,13 +100,13 @@ const categories = [
     position: true,
   },
   {
-    title: "Type designers",
-    id: "typeface",
+    title: "Artists",
+    id: "artist",
     expertise: true,
   },
   {
-    title: "UX designers",
-    id: "ux",
+    title: "Fashion designers",
+    id: "fashion",
     expertise: true,
   },
   {
@@ -115,8 +115,8 @@ const categories = [
     position: true,
   },
   {
-    title: "Web designers",
-    id: "web",
+    title: "Architects",
+    id: "architect",
     expertise: true,
   },
   {
@@ -163,6 +163,26 @@ const categories = [
     title: "Austin",
     id: "austin",
     location: true,
+  },
+  {
+  title: "Gesture designers",
+  id: "gesture",
+  expertise: true,
+  },
+  {
+  title: "Human Factors",
+  id: "human",
+  expertise: true,
+  },
+  {
+  title: "Voice designers",
+  id: "voice",
+  expertise: true,
+  },
+  {
+  title: "Sound designers",
+  id: "sound",
+  expertise: true,
   },
   {
     title: "Vancouver",

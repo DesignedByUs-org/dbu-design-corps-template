@@ -45,18 +45,15 @@ function getProfileLocation({ location }) {
 
 function getProfilePosition({ description }) {
   return {
-    author: includes(description, ["author"]),
+    inventor: includes(description, ["inventor"]),
     ceo: includes(description, ["ceo"]),
-    director:
-      includes(description, ["director"]) &&
-      !includes(description, ["art director"]) &&
-      !includes(description, ["art direction"]) &&
-      !includes(description, ["creative director"]),
+    distinguisheddesigner: includes(description, ["distinguished designer"]),
     founder: includes(description, ["founder"]),
-    freelance: includes(description, ["freelance", "freelancer"]),
-    head: includes(description, ["head of"]),
-    lead: includes(description, ["lead"]),
-    manager: includes(description, ["manager"]),
+    apprentice: includes(description, ["apprentice"]),
+    designfellow: includes(description, ["design fellow"]),
+    cdo: includes(description, ["chief design officer"]) &&
+      !includes(description, ["cdo"]),
+    corps: includes(description, ["design corps"]),
     speaker: includes(description, ["speaker"]),
     vp: includes(description, ["vp"]),
   };
@@ -64,42 +61,29 @@ function getProfilePosition({ description }) {
 
 function getProfileExpertise({ description }) {
   return {
-    art: includes(description, ["art director", "art direction"]),
-    content: includes(description, ["content strategy", "content strategist"]),
-    creative: includes(description, ["creative director"]),
-    systems: includes(description, [
-      "design system",
-      "design systems",
-      "systems designer",
-      "systems design",
-    ]),
-    developer:
-      includes(description, ["developer"]) &&
-      !includes(description, ["creative developer"]),
+    datascience: includes(description, ["data scientist"]) &&
+      !includes(description, ["data engineer"]),
+    prodmanager: includes(description, ["product manager"]) &&
+      !includes(description, ["product design manager"]),
+    designtech: includes(description, ["design technologist"]),
+    animator: includes(description, ["animator"]),
+    cognitive:
+      includes(description, ["cognitive design"]) &&
+      !includes(description, ["cognitive experience designer"]),
     engineer: includes(description, ["engineer", "engineering"]),
-    graphic: includes(description, [
-      "graphic design",
-      "graphic designer",
-      "graphic designing",
-    ]),
-    illustrator: includes(description, [
-      "illustrator",
-      "illustration",
-      "illustrating",
-      "illustrations",
-    ]),
-    letter: includes(description, ["letterer", "lettering"]),
-    product: includes(description, ["product design", "product designer"]),
+    industrial: includes(description, ["industrial designer"]),
+    technologist: includes(description, ["technoogist"]),
+    scientist: includes(description, ["scientist"]),
+    interior: includes(description, ["interior design", "interior designer"]),
     research: includes(description, ["research", "researcher"]),
-    typeface: includes(description, [
-      "type design",
-      "typeface design",
-      "type designer",
-      "typeface designer",
-    ]),
-    ux: includes(description, ["user experience", "ux"]),
-    web: includes(description, ["web design", "web designer"]),
+    artist: includes(description, ["artist",]),
+    fashion: includes(description, ["fashion design", "fashion designer"]),
+    architect: includes(description, ["architect"]),
     writer: includes(description, ["writer"]),
+    human: includes(description, ["human factors"]),
+    voice: includes(description, ["voice design", "voice designer" ]),
+    sound: includes(description, ["sound design", "sound designer"]),
+    gesture: includes(description, ["gesture design", "gesture designer"]),
   };
 }
 

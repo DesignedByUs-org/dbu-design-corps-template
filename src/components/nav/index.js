@@ -10,7 +10,7 @@ const Nav = (props) => {
       style={{
         "--background": props.theme === "dark" && "var(--gray)",
         "--text": props.theme === "dark" && "#fff",
-        "height": "180vw",
+        "height": "100vh",
         "display": "inline-block",
         // "position": "fixed",
         "top": "0",

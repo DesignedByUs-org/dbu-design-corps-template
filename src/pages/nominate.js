@@ -152,7 +152,8 @@ class App extends React.Component {
       justifyContent: 'center',
       backgroundColor: '#68CD67', 
       color: '#000000', 
-      top: '1px'
+      top: '1px',
+      fontWeight: 'bold',
       }}>
         <span className={styles.linkText}>START</span>
       </Button>
