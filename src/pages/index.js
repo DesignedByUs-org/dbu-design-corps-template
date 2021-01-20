@@ -393,15 +393,18 @@ export const pageQuery = graphql`
             profile_link_color
             tags {
               location {
-                nyc
-                ba
-                la
-                london
-                portland
-                toronto
-                vancouver
-                seattle
-                austin
+                mask
+                li
+                truthbot
+                earthspeaks
+                designedby
+                breathe
+                fivethings
+                indisting
+                consensual
+                democracy
+                melange
+                kakuma
               }
               position {
                 ceo
@@ -620,43 +623,43 @@ export const pageQuery = graphql`
       totalCount
     }
 
-    tagCountBa: allTwitterProfile(
-      filter: { profile: { tags: { location: { ba: { eq: true } } } } }
+    tagCountLi: allTwitterProfile(
+      filter: { profile: { tags: { location: { li: { eq: true } } } } }
     ) {
       totalCount
     }
-    tagCountLa: allTwitterProfile(
-      filter: { profile: { tags: { location: { la: { eq: true } } } } }
+    tagCountTruthbot: allTwitterProfile(
+      filter: { profile: { tags: { location: { truthbot: { eq: true } } } } }
     ) {
       totalCount
     }
-    tagCountNyc: allTwitterProfile(
-      filter: { profile: { tags: { location: { nyc: { eq: true } } } } }
+    tagCountMask: allTwitterProfile(
+      filter: { profile: { tags: { location: { mask: { eq: true } } } } }
     ) {
       totalCount
     }
-    tagCountLondon: allTwitterProfile(
-      filter: { profile: { tags: { location: { london: { eq: true } } } } }
+    tagCountEarthspeaks: allTwitterProfile(
+      filter: { profile: { tags: { location: { earthspeaks: { eq: true } } } } }
     ) {
       totalCount
     }
-    tagCountSeattle: allTwitterProfile(
-      filter: { profile: { tags: { location: { seattle: { eq: true } } } } }
+    tagCountIndisting: allTwitterProfile(
+      filter: { profile: { tags: { location: { indisting: { eq: true } } } } }
     ) {
       totalCount
     }
-    tagCountAustin: allTwitterProfile(
-      filter: { profile: { tags: { location: { austin: { eq: true } } } } }
+    tagCountConsensual: allTwitterProfile(
+      filter: { profile: { tags: { location: { consensual: { eq: true } } } } }
     ) {
       totalCount
     }
-    tagCountPortland: allTwitterProfile(
-      filter: { profile: { tags: { location: { portland: { eq: true } } } } }
+    tagCountDesignedby: allTwitterProfile(
+      filter: { profile: { tags: { location: { designedby: { eq: true } } } } }
     ) {
       totalCount
     }
-    tagCountToronto: allTwitterProfile(
-      filter: { profile: { tags: { location: { toronto: { eq: true } } } } }
+    tagCountBreathe: allTwitterProfile(
+      filter: { profile: { tags: { location: { breathe: { eq: true } } } } }
     ) {
       totalCount
     }
@@ -665,8 +668,23 @@ export const pageQuery = graphql`
     ) {
       totalCount
     }
-    tagCountVancouver: allTwitterProfile(
-      filter: { profile: { tags: { location: { vancouver: { eq: true } } } } }
+    tagCountMelange: allTwitterProfile(
+      filter: { profile: { tags: { location: { melange: { eq: true } } } } }
+    ) {
+      totalCount
+    }
+    tagCountDemocracy: allTwitterProfile(
+      filter: { profile: { tags: { location: { democracy: { eq: true } } } } }
+    ) {
+      totalCount
+    }
+    tagCountKakuma: allTwitterProfile(
+      filter: { profile: { tags: { location: { kakuma: { eq: true } } } } }
+    ) {
+      totalCount
+    }
+    tagCountFivethings: allTwitterProfile(
+      filter: { profile: { tags: { location: { fivethings: { eq: true } } } } }
     ) {
       totalCount
     }

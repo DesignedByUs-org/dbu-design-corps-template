@@ -24,22 +24,18 @@ function includes(description, terms) {
 
 function getProfileLocation({ location }) {
   return {
-    nyc: includes(location, ["nyc", "brooklyn", "new york", "ny", "bronx"]),
-    ba: includes(location, [
-      "sf",
-      "san francisco",
-      "bay area",
-      "berkeley",
-      "palo alto",
-      "oakland",
-    ]),
-    la: includes(location, ["la", "los angeles", "santa monica"]),
-    london: includes(location, ["london"]),
-    portland: includes(location, ["portland"]),
-    toronto: includes(location, ["toronto"]),
-    vancouver: includes(location, ["vancouver"]),
-    seattle: includes(location, ["seattle"]),
-    austin: includes(location, ["austin"]),
+    mask: includes(location, ["nyc", "brooklyn", "new york", "ny", "bronx"]),
+    li: includes(location, []),
+    truthbot: includes(location, ["la", "los angeles", "santa monica"]),
+    earthspeaks: includes(location, ["london"]),
+    designedby: includes(location, ["portland"]),
+    breathe: includes(location, ["toronto"]),
+    fivethings: includes(location, ["vancouver"]),
+    indisting: includes(location, ["seattle"]),
+    consensual: includes(location, ["austin"]),
+    democracy: includes(location, ["austin"]),
+    melange: includes(location, ["austin"]),
+    kakuma: includes(location, ["austin"]),
   };
 }
 
