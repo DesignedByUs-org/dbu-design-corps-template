@@ -24,18 +24,18 @@ function includes(description, terms) {
 
 function getProfileLocation({ location }) {
   return {
-    mask: includes(location, ["nyc", "brooklyn", "new york", "ny", "bronx"]),
-    li: includes(location, []),
-    truthbot: includes(location, ["la", "los angeles", "santa monica"]),
-    earthspeaks: includes(location, ["london"]),
-    designedby: includes(location, ["portland"]),
-    breathe: includes(location, ["toronto"]),
-    fivethings: includes(location, ["vancouver"]),
-    indisting: includes(location, ["seattle"]),
-    consensual: includes(location, ["austin"]),
-    democracy: includes(location, ["austin"]),
-    melange: includes(location, ["austin"]),
-    kakuma: includes(location, ["austin"]),
+    mask: includes(location, ["100M mask mayday"]),
+    li: includes(location, ["projectli", "project li"]),
+    truthbot: includes(location, ["truth bot brigade", "truth bot"]),
+    earthspeaks: includes(location, ["earth speaks"]),
+    designedby: includes(location, ["designed by"]),
+    breathe: includes(location, ["breathestat", "breathe stat"]),
+    fivethings: includes(location, ["5things live"]),
+    indisting: includes(location, ["indistinguishable"]),
+    consensual: includes(location, ["consensual"]),
+    democracy: includes(location, ["designing democracy"]),
+    melange: includes(location, ["melange"]),
+    kakuma: includes(location, ["studio kakuma"]),
   };
 }
 
