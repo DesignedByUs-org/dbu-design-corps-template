@@ -41,7 +41,7 @@ const App = ({ data }) => {
   const filterCategoryTypes = [
     { name: "Expertise", id: "expertise" },
     { name: "Position", id: "position" },
-    { name: "Location", id: "location" },
+    { name: "Programs & productions", id: "location" },
   ];
 
   function filterItemOnChange(e, section) {

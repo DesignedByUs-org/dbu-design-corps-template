@@ -35,7 +35,7 @@ const categories = [
     position: true,
   },
   {
-    title: "Cognitive Experience Designers",
+    title: "Cx Designers",
     id: "cognitive",
     expertise: true,
   },

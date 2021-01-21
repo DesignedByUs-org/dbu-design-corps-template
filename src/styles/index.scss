@@ -15,13 +15,13 @@
   --background-gray: rgba(242, 242, 242, 1);
   --background: white;
   --text: var(--gray);
-  --page-shell-padding: 24px;
-  --sidebar: 310px;
+  --page-shell-padding: 27px;
+  --sidebar: 335px;
   --sidebar-height: 208px;
   --element-height: 52px;
 
   @media (min-width: $desktop) {
-    --page-shell-padding: 32px;
+    --page-shell-padding: 27px;
     --element-height: 44px;
   }
   color: var(--gray);

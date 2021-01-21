@@ -59,8 +59,7 @@ function getProfileExpertise({ description }) {
   return {
     datascience: includes(description, ["data scientist"]) &&
       !includes(description, ["data engineer"]),
-    prodmanager: includes(description, ["product manager"]) &&
-      !includes(description, ["product design manager"]),
+    prodmanager: includes(description, ["product manager", "product design manager"]),
     designtech: includes(description, ["design technologist"]),
     animator: includes(description, ["animator"]),
     cognitive:
