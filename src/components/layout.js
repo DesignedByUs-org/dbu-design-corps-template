@@ -12,7 +12,7 @@ const Layout = ({ children }) => (
           content:
             "Directory highlights all under represented - scientist, technologists, engineers, artists, mathmeticians and designers.",
         },
-        { property: "og:title", content: "DBU Design Corps" },
+        { property: "og:title", content: "DesignedByUs | Design Corps" },
         {
           property: "og:description",
           content:
@@ -21,20 +21,20 @@ const Layout = ({ children }) => (
 
         {
           property: "og:image",
-          content: "..static/opengraph.png",
+          content: "https://designcorps.designedbyus.org/opengraph.png",
         },
         {
           property: "og:url",
-          content: "https://womenwho.design",
+          content: "https://designcorps.designedbyus.org",
         },
         { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "DBU Design Corps" },
+        { property: "og:site_name", content: "DesignedByUs | Design Corps" },
         { property: "twitter:site", content: "@DBU_DesignCorps" },
         { property: "twitter:creator", content: "@julesforrest" },
         { property: "twitter:card", content: "summary_large_image" },
         {
           property: "twitter:image",
-          content: "..static/opengraph.png",
+          content: "https://designcorps.designedbyus.org/opengraph.png",
         },
       ]}
     />
