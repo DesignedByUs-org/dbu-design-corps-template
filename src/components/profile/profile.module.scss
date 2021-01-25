@@ -54,7 +54,7 @@
   align-self: start;
 
   @media (min-width: $desktop) {
-    padding: 16px;
+    align-self: initial;
   }
 }
 
