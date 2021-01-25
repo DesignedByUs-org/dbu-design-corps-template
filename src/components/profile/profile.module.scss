@@ -54,7 +54,7 @@
   align-self: start;
 
   @media (min-width: $desktop) {
-    align-self: initial;
+    padding: 16px;
   }
 }
 
@@ -99,6 +99,9 @@
   padding-top: 16px;
   @media (min-width: $desktop) {
     padding-top: 0;
+    color: white;
+  }
+  @media (min-device-width: 375px) {
     color: white;
   }
 }

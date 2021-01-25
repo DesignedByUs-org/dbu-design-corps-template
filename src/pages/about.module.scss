@@ -50,6 +50,10 @@
     font-size: 50px;
     color: white;
   }
+  @media (min-device-width: 370px) {
+    font-size: revert;
+    color: white;
+  }
 }
 .h1:not(:first-of-type) {
   margin-top: 48px;
@@ -121,6 +125,7 @@
   border-top: 1px solid var(--border-gray);
   margin-top: var(--page-shell-padding);
   padding-top: var(--page-shell-padding);
+  margin-bottom: var(--page-shell-padding);
 }
 
 .backLink {

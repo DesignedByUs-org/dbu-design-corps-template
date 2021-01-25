@@ -5,14 +5,14 @@ import "../styles/index.scss";
 const Layout = ({ children }) => (
   <>
     <Helmet
-      title="DesignedByUs | Design Corps"
+      title="DesignedByUs™ | Design Corps"
       meta={[
         {
           property: "description",
           content:
             "Directory highlights all under represented - scientist, technologists, engineers, artists, mathmeticians and designers.",
         },
-        { property: "og:title", content: "DesignedByUs | Design Corps" },
+        { property: "og:title", content: "DesignedByUs™ | Design Corps" },
         {
           property: "og:description",
           content:

@@ -8,6 +8,21 @@
   font-family: $pitch;
   color: black;
   background-color: black;
+  @media (max-device-width: 375px) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    text-align: center;
+  }
+  @media (max-device-width: 1024px) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    text-align: center;
+  }
+
   a:focus,
   button:focus {
     outline: none;
@@ -32,7 +47,7 @@
 
 .links {
   padding-top: 24px;
-  padding-left: 65px;
+  text-align: center;
 }
 
 .link {
