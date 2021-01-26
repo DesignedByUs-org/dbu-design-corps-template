@@ -22,20 +22,20 @@ function includes(description, terms) {
   });
 }
 
-function getProfileLocation({ location }) {
+function getProfileLocation({ description }) {
   return {
-    mask: includes(location, ["100M mask mayday"]),
-    li: includes(location, ["projectli", "project li"]),
-    truthbot: includes(location, ["truth bot brigade", "truth bot"]),
-    earthspeaks: includes(location, ["earth speaks"]),
-    designedby: includes(location, ["designed by"]),
-    breathe: includes(location, ["breathestat", "breathe stat"]),
-    fivethings: includes(location, ["5things live"]),
-    indisting: includes(location, ["indistinguishable"]),
-    consensual: includes(location, ["consensual"]),
-    democracy: includes(location, ["designing democracy"]),
-    melange: includes(location, ["melange"]),
-    kakuma: includes(location, ["studio kakuma"]),
+    mask: includes(description, ["100M mask mayday"]),
+    li: includes(description, ["projectli", "project li"]),
+    truthbot: includes(description, ["truth bot brigade", "truth bot"]),
+    earthspeaks: includes(description, ["earth speaks"]),
+    designedby: includes(description, ["designed by"]),
+    breathe: includes(description, ["breathestat", "breathe stat"]),
+    fivethings: includes(description, ["5things live"]),
+    indisting: includes(description, ["indistinguishable"]),
+    consensual: includes(description, ["consensual"]),
+    democracy: includes(description, ["designing democracy"]),
+    melange: includes(description, ["melange"]),
+    kakuma: includes(description, ["studio kakuma"]),
   };
 }
 

@@ -83,7 +83,7 @@ const App = ({ data }) => {
 
   const filteredDesigners = isNoFilterApplied
     ? visibleDesigners
-    : visibleDesigners.filter((designer) => {
+    : visibleDesigners.filter((member) => {
         // A profile should appear if they have at least one tag within each
         // section.
         return Object.entries(selectedFilters).every((category) => {
@@ -293,7 +293,7 @@ const App = ({ data }) => {
                   </div>
                 </>
               ) : (
-                <div>There are no designers that match these filters.</div>
+                <div>There are no Design Corps members that match these filters.</div>
               )}
             </>
           )}
