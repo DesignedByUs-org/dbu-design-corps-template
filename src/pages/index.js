@@ -83,7 +83,7 @@ const App = ({ data }) => {
 
   const filteredDesigners = isNoFilterApplied
     ? visibleDesigners
-    : visibleDesigners.filter((member) => {
+    : visibleDesigners.filter((designer) => {
         // A profile should appear if they have at least one tag within each
         // section.
         return Object.entries(selectedFilters).every((category) => {
@@ -357,7 +357,7 @@ const App = ({ data }) => {
                 </div>
                 <div className={styles.dialogFooter}>
                   <Button type="button" onClick={close}>
-                    View {filteredDesigners.length} designer
+                    View {filteredDesigners.length} member
                     {filteredDesigners.length !== 1 ? "s" : ""}
                   </Button>
                 </div>
