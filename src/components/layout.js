@@ -10,13 +10,13 @@ const Layout = ({ children }) => (
         {
           property: "description",
           content:
-            "Welcome to theDesign Corps Directory, home to the most inclusive network of all under represented - scientist, technologists, engineers, artists, mathmeticians and designers.",
+            "Welcome to the Design Corps Directory, home to the most inclusive network of all under represented - scientists, technologists, engineers, artists, mathmeticians and designers.",
         },
         { property: "og:title", content: "DesignedByUs™ | Design Corps" },
         {
           property: "og:description",
           content:
-            "Welcome to theDesign Corps Directory, home to the most inclusive network of all under represented - scientist, technologists, engineers, artists, mathmeticians and designers.",
+            "Welcome to the Design Corps Directory, home to the most inclusive network of all under represented - scientists, technologists, engineers, artists, mathmeticians and designers.",
         },
 
         {
