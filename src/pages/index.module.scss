@@ -127,8 +127,8 @@
 }
 
 .filterButtonContainer {
-  position: static;
-  bottom: 120px;
+  position: fixed;
+  bottom: 64px;
   left: 50%;
   transform: translateX(-50%);
   @media (min-width: $desktop) {
