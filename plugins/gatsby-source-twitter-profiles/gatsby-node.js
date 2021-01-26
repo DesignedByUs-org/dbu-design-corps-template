@@ -22,7 +22,7 @@ function includes(description, terms) {
   });
 }
 
-function getProfileLocation({ description }) {
+function getProfileProgram({ description }) {
   return {
     mask: includes(description, ["100M mask mayday"]),
     li: includes(description, ["projectli", "project li"]),
@@ -126,7 +126,7 @@ exports.sourceNodes = async (
           ...profile,
           description: addDescriptionLinks(profile),
           tags: {
-            program: getProfileLocation(profile),
+            program: getProfileProgram(profile),
             expertise: getProfileExpertise(profile),
             position: getProfilePosition(profile),
           },
