@@ -24,11 +24,11 @@ function includes(description, terms) {
 
 function getProfileProgram({ description }) {
   return {
-    mask: includes(description, ["100M mask mayday"]),
+    mask: includes(description, ["100M mask mayday", "100MMM Mayday"]),
     li: includes(description, ["projectli", "project li"]),
-    truthbot: includes(description, ["truth bot brigade", "truth bot"]),
+    truthbot: includes(description, ["truth bot brigade", "truth bot", "truthbot", "truthbot brigade"]),
     earthspeaks: includes(description, ["earth speaks", "earthspeaks"]),
-    designedby: includes(description, ["designed by"]),
+    designedby: includes(description, ["designed by", "designedby"]),
     breathe: includes(description, ["breathestat", "breathe stat"]),
     fivethings: includes(description, ["5things live"]),
     indisting: includes(description, ["indistinguishable"]),
