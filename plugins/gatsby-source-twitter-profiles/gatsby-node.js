@@ -27,7 +27,7 @@ function getProfileLocation({ description }) {
     mask: includes(description, ["100M mask mayday"]),
     li: includes(description, ["projectli", "project li"]),
     truthbot: includes(description, ["truth bot brigade", "truth bot"]),
-    earthspeaks: includes(description, ["earth speaks"]),
+    earthspeaks: includes(description, ["earth speaks", "earthspeaks"]),
     designedby: includes(description, ["designed by"]),
     breathe: includes(description, ["breathestat", "breathe stat"]),
     fivethings: includes(description, ["5things live"]),
@@ -126,7 +126,7 @@ exports.sourceNodes = async (
           ...profile,
           description: addDescriptionLinks(profile),
           tags: {
-            location: getProfileLocation(profile),
+            program: getProfileLocation(profile),
             expertise: getProfileExpertise(profile),
             position: getProfilePosition(profile),
           },

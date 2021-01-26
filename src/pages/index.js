@@ -41,7 +41,7 @@ const App = ({ data }) => {
   const filterCategoryTypes = [
     { name: "Expertise", id: "expertise" },
     { name: "Position", id: "position" },
-    { name: "Programs & productions", id: "location" },
+    { name: "Programs & productions", id: "program" },
   ];
 
   function filterItemOnChange(e, section) {
@@ -392,7 +392,7 @@ export const pageQuery = graphql`
             profile_image_url_https
             profile_link_color
             tags {
-              location {
+              program {
                 mask
                 li
                 truthbot
@@ -624,42 +624,42 @@ export const pageQuery = graphql`
     }
 
     tagCountLi: allTwitterProfile(
-      filter: { profile: { tags: { location: { li: { eq: true } } } } }
+      filter: { profile: { tags: { program: { li: { eq: true } } } } }
     ) {
       totalCount
     }
     tagCountTruthbot: allTwitterProfile(
-      filter: { profile: { tags: { location: { truthbot: { eq: true } } } } }
+      filter: { profile: { tags: { program: { truthbot: { eq: true } } } } }
     ) {
       totalCount
     }
     tagCountMask: allTwitterProfile(
-      filter: { profile: { tags: { location: { mask: { eq: true } } } } }
+      filter: { profile: { tags: { program: { mask: { eq: true } } } } }
     ) {
       totalCount
     }
     tagCountEarthspeaks: allTwitterProfile(
-      filter: { profile: { tags: { location: { earthspeaks: { eq: true } } } } }
+      filter: { profile: { tags: { program: { earthspeaks: { eq: true } } } } }
     ) {
       totalCount
     }
     tagCountIndisting: allTwitterProfile(
-      filter: { profile: { tags: { location: { indisting: { eq: true } } } } }
+      filter: { profile: { tags: { program: { indisting: { eq: true } } } } }
     ) {
       totalCount
     }
     tagCountConsensual: allTwitterProfile(
-      filter: { profile: { tags: { location: { consensual: { eq: true } } } } }
+      filter: { profile: { tags: { program: { consensual: { eq: true } } } } }
     ) {
       totalCount
     }
     tagCountDesignedby: allTwitterProfile(
-      filter: { profile: { tags: { location: { designedby: { eq: true } } } } }
+      filter: { profile: { tags: { program: { designedby: { eq: true } } } } }
     ) {
       totalCount
     }
     tagCountBreathe: allTwitterProfile(
-      filter: { profile: { tags: { location: { breathe: { eq: true } } } } }
+      filter: { profile: { tags: { program: { breathe: { eq: true } } } } }
     ) {
       totalCount
     }
@@ -669,22 +669,22 @@ export const pageQuery = graphql`
       totalCount
     }
     tagCountMelange: allTwitterProfile(
-      filter: { profile: { tags: { location: { melange: { eq: true } } } } }
+      filter: { profile: { tags: { program: { melange: { eq: true } } } } }
     ) {
       totalCount
     }
     tagCountDemocracy: allTwitterProfile(
-      filter: { profile: { tags: { location: { democracy: { eq: true } } } } }
+      filter: { profile: { tags: { program: { democracy: { eq: true } } } } }
     ) {
       totalCount
     }
     tagCountKakuma: allTwitterProfile(
-      filter: { profile: { tags: { location: { kakuma: { eq: true } } } } }
+      filter: { profile: { tags: { program: { kakuma: { eq: true } } } } }
     ) {
       totalCount
     }
     tagCountFivethings: allTwitterProfile(
-      filter: { profile: { tags: { location: { fivethings: { eq: true } } } } }
+      filter: { profile: { tags: { program: { fivethings: { eq: true } } } } }
     ) {
       totalCount
     }

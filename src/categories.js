@@ -127,57 +127,57 @@ const categories = [
   {
     title: "100M mask mayday",
     id: "mask",
-    location: true,
+    program: true,
   },
   {
     title: "project li",
     id: "li",
-    location: true,
+    program: true,
   },
   {
     title: "truthbot brigade",
     id: "truthbot",
-    location: true,
+    program: true,
   },
   {
     title: "Indistinguishable",
     id: "indisting",
-    location: true,
+    program: true,
   },
   {
     title: "earth speaks",
     id: "earthspeaks",
-    location: true,
+    program: true,
   },
   {
     title: "breathestat",
     id: "breathe",
-    location: true,
+    program: true,
   },
   {
     title: "Designing Democracy",
     id: "democracy",
-    location: true,
+    program: true,
   },
   {
     title: "melange",
     id: "melange",
-    location: true,
+    program: true,
   },
   {
     title: "Studio Kakuma",
     id: "kakuma",
-    location: true,
+    program: true,
   },
   {
     title: "Designed By",
     id: "designedby",
-    location: true,
+    program: true,
   },
   {
     title: "consensual",
     id: "consensual",
-    location: true,
+    program: true,
   },
   {
   title: "Gesture designers",
@@ -202,7 +202,7 @@ const categories = [
   {
     title: "5things live",
     id: "fivethings",
-    location: true,
+    program: true,
   },
 ];
 
