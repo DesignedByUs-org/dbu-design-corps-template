@@ -207,7 +207,7 @@ const categories = [
   {
     title: "Mathematicians",
     id: "math",
-    experience: true,
+    expertise: true,
   },
   {
     title: "Entrepreneurs",
