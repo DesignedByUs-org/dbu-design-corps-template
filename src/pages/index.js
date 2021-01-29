@@ -41,7 +41,7 @@ const App = ({ data }) => {
   const filterCategoryTypes = [
     { name: "Expertise", id: "expertise" },
     { name: "Position", id: "position" },
-    { name: "Programs & productions", id: "program" },
+    { name: "Programs & Productions", id: "program" },
   ];
 
   function filterItemOnChange(e, section) {
@@ -417,6 +417,7 @@ export const pageQuery = graphql`
                 corps
                 speaker
                 vp
+                entrepreneur
               }
               expertise {
                 datascience
@@ -438,6 +439,7 @@ export const pageQuery = graphql`
                 voice
                 sound
                 gesture
+                math
               }
             }
             entities {

@@ -204,6 +204,16 @@ const categories = [
     id: "fivethings",
     program: true,
   },
+  {
+    title: "Mathematicians",
+    id: "math",
+    experience: true,
+  },
+  {
+    title: "Entrepreneurs",
+    id: "entrepreneur",
+    position: true,
+  },
 ];
 
 export default categories;

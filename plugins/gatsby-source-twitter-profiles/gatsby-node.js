@@ -51,6 +51,7 @@ function getProfilePosition({ description }) {
       !includes(description, ["cdo"]),
     corps: includes(description, ["design corps"]),
     speaker: includes(description, ["speaker"]),
+    entrepreneur: includes(description, ["entrepreneur"]),
     vp: includes(description, ["vp"]),
   };
 }
@@ -78,6 +79,7 @@ function getProfileExpertise({ description }) {
     human: includes(description, ["human factors"]),
     voice: includes(description, ["voice design", "voice designer" ]),
     sound: includes(description, ["sound design", "sound designer"]),
+    math: includes(description, ["mathematician", "math"]),
     gesture: includes(description, ["gesture design", "gesture designer"]),
   };
 }
