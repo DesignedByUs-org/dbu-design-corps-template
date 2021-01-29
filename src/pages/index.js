@@ -467,6 +467,18 @@ export const pageQuery = graphql`
       totalCount
     }
 
+    tagCountMath: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { math: { eq: true } } } } }
+    ) {
+      totalCount
+    }
+
+    tagCountEntrepreneur: allTwitterProfile(
+      filter: { profile: { tags: { position: { entrepreneur: { eq: true } } } } }
+    ) {
+      totalCount
+    }
+
     tagCountCeo: allTwitterProfile(
       filter: { profile: { tags: { position: { ceo: { eq: true } } } } }
     ) {
