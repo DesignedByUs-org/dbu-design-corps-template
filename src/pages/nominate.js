@@ -87,7 +87,7 @@ class App extends React.Component {
           
 
           <p className={styles.p}>
-          The Design Corps is an inclusive network of Science, Technology, Engineering, Arts, Math and Design changemakers If you indetify as LatinX, Black, LGBTQIA+, Indigenous, Filipino, Indian, Asian, Disabled, Aging, Veteran, Women, Girls, Femme or a fierce ally we want you!
+          The Design Corps is an inclusive network of Science, Technology, Engineering, Arts, Math and Design changemakers. If you indetify as LatinX, Black, LGBTQIA+, Indigenous, Filipino, Indian, Asian, Disabled, Aging, Veteran, Women, Girls, Femme or a fierce ally we want you!
           </p>
           {!this.state.formSubmitted && (
             <form

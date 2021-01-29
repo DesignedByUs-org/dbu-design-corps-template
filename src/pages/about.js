@@ -112,7 +112,7 @@ const App = () => (
       Appealing to the value of human life on earth and in the universe, inspire people to enlist, volunteer, donate and act with high judgement, scientific objectivity and creative ingenuity.      
       </p>
 
-      <div style={{backgroundColor: '#1e1e1e', paddingLeft: '20px', paddingBottom: '80px', paddingRight: '20px'}}>
+      <div style={{backgroundColor: '#1e1e1e', padding: '30px', paddingBottom: '80px'}}>
         <h2 className={styles.h2}>Sponsor the design corp</h2>
       <p>
       The Design Corps is a social benefit business. If you’re interested in sponsoring progress, post a job or make a donation.
@@ -121,8 +121,8 @@ const App = () => (
       href={"https://designedbyus.org/donate"}
       style={{
       display: 'inline-block',
-      float: 'right',
-      width: '30%', 
+      float: 'inline-end',
+      width: 'auto', 
       backgroundColor: '#68CD67',  
       color: '#000000', 
       top: '1px',

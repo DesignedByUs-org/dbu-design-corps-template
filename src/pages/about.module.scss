@@ -12,6 +12,7 @@
   line-height: 1.5;
   margin-left: 10%;
   margin-right: 5%;
+  position: absolute;
   @media (min-width: $desktop) {
     font-size: 18px;
     padding: var(--page-shell-padding) var(--page-shell-padding) 64px
