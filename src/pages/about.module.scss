@@ -17,8 +17,17 @@
     font-size: 18px;
     padding: var(--page-shell-padding) var(--page-shell-padding) 64px
       var(--page-shell-padding);
-      position: inherit;
     // margin-left: var(--background);
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    position: inherit;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    position: inherit;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    position: inherit;
   }
 
   p {
@@ -52,7 +61,7 @@
     font-size: 50px;
     color: white;
   }
-  @media (min-device-width: 370px) {
+  @media (min-width: 320px) and (max-width: 480px) {
     font-size: revert;
     color: white;
   }
