@@ -76,7 +76,7 @@ const sortedFriends = sortBy(friends, (friend) => friend.title);
 const App = () => (
   <Layout>
     <Helmet title="About | DBU Design Corps" />
-    <Nav theme="dark" style={{height: '300vh'}}/>
+    <Nav theme="dark"/>
     <div className={styles.container}>
       <h1 className={styles.h1}>Design Corps Directory</h1>
       <p>

@@ -78,7 +78,7 @@ class App extends React.Component {
     return (
       <Layout>
         <Helmet title="Join | DBU Design Corps" />
-        <Nav theme="dark" style={{height: '100vh'}}/>
+        <Nav theme="dark"/>
         <div className={styles.container}>
         
           <h1 className={styles.h1}>Join the
