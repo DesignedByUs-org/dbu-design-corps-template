@@ -383,3 +383,25 @@
 .friendImageContrast {
   filter: invert(1) grayscale(1) contrast(10);
 }
+
+.donate {
+  // background-color: #1e1e1e;
+  // --background: #1e1e1e;
+  --text: white;
+  // display: block;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
+  // background-color: #1e1e1e;
+  // text-decoration: none;
+  // padding-top: 8px;
+  // margin-left: 5px;
+  // padding-right: 5px;
+  // padding-bottom: 5px;
+  // padding-right: 12px;
+  // margin: auto;
+
+  @media (min-width: $desktop) {
+    // padding-top: 8px;
+  }
+}
