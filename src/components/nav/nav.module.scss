@@ -8,14 +8,14 @@
   font-family: $pitch;
   color: black;
   background-color: black;
-  @media (max-device-width: 375px) {
+  @media screen and (max-device-width: 375px) {
     width: 100%;
     height: auto;
     display: flex;
     align-content: center;
     text-align: center;
   }
-  @media (max-device-width: 1024px) {
+  @media screen and (max-device-width: 1024px) {
     width: 100%;
     height: auto;
     display: flex;
