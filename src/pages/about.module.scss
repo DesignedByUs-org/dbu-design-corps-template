@@ -18,8 +18,10 @@
     padding: var(--page-shell-padding) var(--page-shell-padding) 64px
       var(--page-shell-padding);
     // margin-left: var(--background);
+    position: absolute;
+    display: inline-block;
   }
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 320px) and (max-width: 1024px) {
     position: inherit;
   }
   // @media (min-width: 768px) and (max-width: 1024px) {
