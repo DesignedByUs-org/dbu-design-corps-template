@@ -102,7 +102,7 @@ const categories = [
   {
     title: "Production Designers",
     id: "expertise",
-    experience: true,
+    expertise: true,
   },
   {
     title: "Artists",

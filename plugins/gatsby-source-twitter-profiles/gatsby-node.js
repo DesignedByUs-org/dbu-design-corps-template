@@ -44,7 +44,7 @@ function getProfilePosition({ description }) {
     inventor: includes(description, ["inventor"]),
     ceo: includes(description, ["ceo"]),
     distinguisheddesigner: includes(description, ["distinguished designer"]),
-    founder: includes(description, ["founder"]),
+    founder: includes(description, ["founder", "co-founder", "cofounder"]),
     apprentice: includes(description, ["apprentice"]),
     designfellow: includes(description, ["design fellow"]),
     cdo: includes(description, ["chief design officer"]) &&
@@ -58,14 +58,11 @@ function getProfilePosition({ description }) {
 
 function getProfileExpertise({ description }) {
   return {
-    datascience: includes(description, ["data scientist"]) &&
-      !includes(description, ["data engineer", "Machine Learning Engineer", "Machine Learning Scientist", "Applications Architect", "Enterprise Architect", "Data Architect", "Infrastructure Architect", "Statistician", "Data Analyst"]),
+    datascience: includes(description, ["data scientist","data engineer", "Machine Learning Engineer", "Machine Learning Scientist", "Applications Architect", "Enterprise Architect", "Data Architect", "Infrastructure Architect", "Statistician", "Data Analyst", "data"]),
     prodmanager: includes(description, ["product manager", "product design manager"]),
     designtech: includes(description, ["design technologist"]),
     animator: includes(description, ["animator", "generative", "character designer", "stop motion", "flash animator", "composting artist", "visual effects modeling", "rigging", "layout artist"]),
-    cognitive:
-      includes(description, ["cognitive design"]) &&
-      !includes(description, ["cognitive experience designer", "ai designer", "machine learning", "generative design", "creative coding", "cognitive ergonomics", "neuro ergonomics", "algorithmic design", "machine learning", "ergonomics"]),
+    cognitive: includes(description, ["cognitive design", "cognitive experience designer", "ai", "iot", "ai designer", "machine learning", "generative design", "creative coding", "cognitive ergonomics", "neuro ergonomics", "algorithmic design", "machine learning", "ergonomics"]),
     engineer: includes(description, ["engineer", "engineering"]),
     industrial: includes(description, ["industrial designer", "Industrial Engineer", "Tool design", "Stencil making", "Automobile designer", "Airline interior designer", "furniture designer", "appliance designer", "toy designer", "footwear designer"]),
     technologist: includes(description, ["technologist"]),
@@ -76,13 +73,12 @@ function getProfileExpertise({ description }) {
     fashion: includes(description, ["fashion design", "fashion designer", "fashion"]),
     architect: includes(description, ["architect"]),
     writer: includes(description, ["writer", "screenwriter"]),
-    human: includes(description, ["human factors", "HCI", "human-computer interaction", "ergonomics", "workplace safety", "human error", "product design", "usability", "safety scientist", "Usability Engineering", "Cognitive", "Experimental Psychology", "Kinesiology", "Industrial Design", "Biomedical Engineering"
-  ]),
+    human: includes(description, ["human factors", "HCI", "human-computer interaction", "ergonomics", "workplace safety", "human error", "product design", "usability", "safety scientist", "Usability Engineering", "Cognitive", "Experimental Psychology", "Kinesiology", "Industrial Design", "Biomedical Engineering", "ux"]),
     voice: includes(description, ["voice design", "voice designer" ]),
     sound: includes(description, ["sound design", "sound designer", "SFX", "Voice Over", "music", "audio effects", "foley sounds", "dialogue", "audio production", "radio", "digital audio", "musical",  "audiography", "sound mixer", "Boom operator", "sound technician", "sound editor", "Re-recording mixer", "Foley artist", "Dubbing ADR", "Composer", "Music supervisor", "Music editor", "Orchestrator"]),
     math: includes(description, ["mathematician", "math"]),
     gesture: includes(description, ["gesture design", "gesture designer"]),
-    proddesign: includes(description, ["sets", "props", "lighting", "graphics", "costumes", "camera angles", "theatre", "film", "television", "tv", "podcast productions"]),
+    proddesign: includes(description, ["sets", "props", "lighting", "graphics", "costumes", "camera angles", "theatre", "film", "television", "tv", "podcast productions", "entertainment", "production", "production designer", "production design"]),
   };
 }
 
