@@ -520,7 +520,6 @@ export const pageQuery = graphql`
     ) {
       totalCount
     }
-    
     tagCountFounder: allTwitterProfile(
       filter: { profile: { tags: { position: { founder: { eq: true } } } } }
     ) {
