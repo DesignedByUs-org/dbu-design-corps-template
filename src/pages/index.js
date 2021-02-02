@@ -422,6 +422,7 @@ export const pageQuery = graphql`
               expertise {
                 datascience
                 prodmanager
+                proddesign
                 designtech
                 animator
                 cognitive
@@ -514,7 +515,11 @@ export const pageQuery = graphql`
     ) {
       totalCount
     }
-
+    tagCountProddesign: allTwitterProfile(
+      filter: { profile: { tags: { expertise: { proddesign: { eq: true } } } } }
+    ) {
+      totalCount
+    }
     tagCountFounder: allTwitterProfile(
       filter: { profile: { tags: { position: { founder: { eq: true } } } } }
     ) {

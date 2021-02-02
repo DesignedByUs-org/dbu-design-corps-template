@@ -35,7 +35,7 @@ const categories = [
     position: true,
   },
   {
-    title: "Cx Designers",
+    title: "Cognitive XD",
     id: "cognitive",
     expertise: true,
   },
@@ -98,6 +98,11 @@ const categories = [
     title: "Speakers",
     id: "speaker",
     position: true,
+  },
+  {
+    title: "Production Designers",
+    id: "expertise",
+    experience: true,
   },
   {
     title: "Artists",

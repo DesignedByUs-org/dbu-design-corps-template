@@ -59,28 +59,30 @@ function getProfilePosition({ description }) {
 function getProfileExpertise({ description }) {
   return {
     datascience: includes(description, ["data scientist"]) &&
-      !includes(description, ["data engineer"]),
+      !includes(description, ["data engineer", "Machine Learning Engineer", "Machine Learning Scientist", "Applications Architect", "Enterprise Architect", "Data Architect", "Infrastructure Architect", "Statistician", "Data Analyst"]),
     prodmanager: includes(description, ["product manager", "product design manager"]),
     designtech: includes(description, ["design technologist"]),
-    animator: includes(description, ["animator"]),
+    animator: includes(description, ["animator", "generative", "character designer", "stop motion", "flash animator", "composting artist", "visual effects modeling", "rigging", "layout artist"]),
     cognitive:
       includes(description, ["cognitive design"]) &&
-      !includes(description, ["cognitive experience designer"]),
+      !includes(description, ["cognitive experience designer", "ai designer", "machine learning", "generative design", "creative coding", "cognitive ergonomics", "neuro ergonomics", "algorithmic design", "machine learning", "ergonomics"]),
     engineer: includes(description, ["engineer", "engineering"]),
-    industrial: includes(description, ["industrial designer"]),
+    industrial: includes(description, ["industrial designer", "Industrial Engineer", "Tool design", "Stencil making", "Automobile designer", "Airline interior designer", "furniture designer", "appliance designer", "toy designer", "footwear designer"]),
     technologist: includes(description, ["technologist"]),
-    scientist: includes(description, ["scientist"]),
-    interior: includes(description, ["interior design", "interior designer"]),
+    scientist: includes(description, ["scientist", "Dr. Science", "Dr.", "science", "Audiologist", "doctor", "astronomer", "botanist", "epidemiologist", "ethologist", "Biologist", "Biomedical Engineer", "Cell Biologist", "Chemist", "Geologist", "marine biologist", "oceanographer", "Seismologist", "Zoologist", "Volcanologist", "Archaeologist", "Virologist"]),
+    interior: includes(description, ["interior design", "interior designer", "Interior", "Spatial Designer", "Exhibition Designer", "visual merchandiser"]),
     research: includes(description, ["research", "researcher"]),
-    artist: includes(description, ["artist",]),
+    artist: includes(description, ["artist", "actor", "musician", "painter", "sculptor", "singer", "art director", "talent", "photographer", "illustrator", "calligrapher", "printmaker", "graphic arts", "drawing", "generative art", "literature", "cinema", "pop art"]),
     fashion: includes(description, ["fashion design", "fashion designer", "fashion"]),
     architect: includes(description, ["architect"]),
     writer: includes(description, ["writer", "screenwriter"]),
-    human: includes(description, ["human factors"]),
+    human: includes(description, ["human factors", "HCI", "human-computer interaction", "ergonomics", "workplace safety", "human error", "product design", "usability", "safety scientist", "Usability Engineering", "Cognitive", "Experimental Psychology", "Kinesiology", "Industrial Design", "Biomedical Engineering"
+  ]),
     voice: includes(description, ["voice design", "voice designer" ]),
-    sound: includes(description, ["sound design", "sound designer"]),
+    sound: includes(description, ["sound design", "sound designer", "SFX", "Voice Over", "music", "audio effects", "foley sounds", "dialogue", "audio production", "radio", "digital audio", "musical",  "audiography", "sound mixer", "Boom operator", "sound technician", "sound editor", "Re-recording mixer", "Foley artist", "Dubbing ADR", "Composer", "Music supervisor", "Music editor", "Orchestrator"]),
     math: includes(description, ["mathematician", "math"]),
     gesture: includes(description, ["gesture design", "gesture designer"]),
+    proddesign: includes(description, ["sets", "props", "lighting", "graphics", "costumes", "camera angles", "theatre", "film", "television", "tv", "podcast productions"]),
   };
 }
 
