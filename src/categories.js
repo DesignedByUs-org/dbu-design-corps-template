@@ -101,7 +101,7 @@ const categories = [
   },
   {
     title: "Production Designers",
-    id: "expertise",
+    id: "proddesign",
     expertise: true,
   },
   {
