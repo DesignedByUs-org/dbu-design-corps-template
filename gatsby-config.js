@@ -13,18 +13,13 @@ module.exports = {
     {
       resolve: "gatsby-source-twitter-profiles",
       options: {
-        consumerKey: "L57UqKhtOUMs1d6OlFsukQqHI",
-        consumerSecret: "EJNX7VBYntFqpUSogC0hCIBFcXDqoIraywSCzEmTHzmbGoPP04",
-        bearerToken: "AAAAAAAAAAAAAAAAAAAAAOH9KgEAAAAAVLvqXLj9bVwrQn3i0xwTIUvV9Yc%3Da1FxKJBXaKEhKuFZejm1CO5dy8BYwh4G2LCpLzXUo5Key8FPBU",
+        consumerKey: process.env.DBU_CONSUMER_KEY,
+        consumerSecret: process.env.DBU_CONSUMER_SECRET,
+        bearerToken: process.env.DBU_BEARER_TOKEN,
         twitterIdForFollowingList: "1337449516946087938",
       },
     },
-    // {
-    //   resolve: "gatsby-source-seeker",
-    //   options: {
-    //     key: process.env.WWD_SEEKER_KEY,
-    //   },
-    // },
+
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -67,7 +62,7 @@ module.exports = {
       options: {
         fonts: [
           `Space Mono`,
-          `source sans pro\:400`, // you can also specify font weights and styles 
+          `source sans pro:400`, // you can also specify font weights and styles 
         ],
       },
     },
