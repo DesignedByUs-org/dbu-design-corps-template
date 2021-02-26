@@ -7,31 +7,19 @@
   vertical-align: top;
   max-width: 50rem;
   font-size: 16px;
-  // padding: var(--page-shell-padding) var(--page-shell-padding) 48px
-  //   var(--page-shell-padding);
   line-height: 1.5;
-  // margin-left: 10%;
   margin: 5%;
   position: absolute;
   @media (min-width: $desktop) {
     font-size: 18px;
     padding: var(--page-shell-padding) var(--page-shell-padding) 64px
       var(--page-shell-padding);
-    // margin-left: var(--background);
     position: absolute;
     display: inline-block;
   }
   @media screen and (min-width: 320px) and (max-width: 1024px) {
     position: inherit;
   }
-  // @media (min-width: 768px) and (max-width: 1024px) {
-  //   position: inherit;
-  // }
-
-  // @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  //   position: inherit;
-  // }
-
   p {
     color: white;
     margin-bottom: 24px;
@@ -77,10 +65,7 @@
   font-size: 30px;
   font-family: "Sifonn Basic 2";
   font-weight: 400;
-  // position: relative;
   color: white;
-  // margin-top: 12px;
-  // padding-bottom: 8px;
   @media (min-width: $desktop) {
     padding-top: 24px;
   }
@@ -93,7 +78,6 @@
   font-weight: 400;
   position: relative;
   color: white;
-  // padding-top: 12px;
   padding-bottom: 8px;
 
   @media (min-width: $desktop) {
@@ -387,23 +371,7 @@
 }
 
 .donate {
-  // background-color: #1e1e1e;
-  // --background: #1e1e1e;
   --text: white;
-  // display: block;
-  // align-items: center;
-  // justify-content: center;
-  // flex-direction: column;
-  // background-color: #1e1e1e;
-  // text-decoration: none;
-  // padding-top: 8px;
-  // margin-left: 5px;
-  // padding-right: 5px;
-  // padding-bottom: 5px;
-  // padding-right: 12px;
-  // margin: auto;
-
   @media (min-width: $desktop) {
-    // padding-top: 8px;
   }
 }

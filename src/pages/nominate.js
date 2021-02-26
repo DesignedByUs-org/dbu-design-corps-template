@@ -7,7 +7,6 @@ import styles from "./about.module.scss";
 import Layout from "../components/layout";
 import Button from "../components/button";
 import "reset-css";
-// import { ReactTypeformEmbed } from 'react-typeform-embed';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -18,11 +17,7 @@ const encode = (data) => {
 
 class App extends React.Component {
   constructor(props) {
-    // render() {
-    //   return <ReactTypeformEmbed url="https://demo.typeform.com/to/njdbt5" />;
-    // };
     super(props);
-    // this.designerArray = props.data.allTwitterProfile.edges;
     this.state = {
       name: "",
       reason: "",
@@ -90,62 +85,10 @@ class App extends React.Component {
           The Design Corps is an inclusive network of Science, Technology, Engineering, Arts, Math and Design changemakers. If you indetify as LatinX, Black, LGBTQIA+, Indigenous, Filipino, Indian, Asian, Disabled, Aging, Veteran, Women, Girls, Femme or a fierce ally we want you!
           </p>
           {!this.state.formSubmitted && (
-            <form
-              // onSubmit={this.handleSubmit}
-              // data-netlify="true"
-              // name="nominations"
-            >
-              {/* <input type="hidden" name="form-name" value="nominations" />
-              <label htmlFor="name" className={styles.label}>
-                What’s her Twitter handle?
-              </label>
-              <input
-                id="name"
-                className={styles.input}
-                type="text"
-                name="name"
-                value={name}
-                required
-                onChange={this.handleChange}
-                onBlur={this.validateName}
-              />
-              {this.state.nameValidationMessage && (
-                <p className={styles.validationMessage}>
-                  {this.state.nameValidationMessage}
-                </p>
-              )}
-              <label htmlFor="reason" className={styles.label}>
-                Why are you nominating her?
-              </label>
-              <input
-                id="reason"
-                className={styles.input}
-                type="text"
-                name="reason"
-                value={reason}
-                required
-                onChange={this.handleChange}
-                disabled={!!this.state.nameValidationMessage}
-              /> */}
-
-              {/* <Button style={{color : '#68CD67'}}
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdUmQXlwkRdJhiTXpAOQRMi7LCaxzuCaDe2Jl-krM1FAt1SFQ/viewform?usp=sf_link"
-                target="_blank"
-                // rel="noopener noreferrer"
-                type="submit"
-                disabled={!!this.state.nameValidationMessage}
-                arrow
-                fullWidth={false}
-              >
-                Start
-                
-              </Button> */}
-              {/* <div styles={{float: 'center'}} href="https://docs.google.com/forms/d/e/1FAIpQLSdUmQXlwkRdJhiTXpAOQRMi7LCaxzuCaDe2Jl-krM1FAt1SFQ/viewform?usp=sf_link">
-               <button style={{width: '100%', backgroundColor: '#68CD67', alignContent: 'right', color: '#000000', padding: '16px 31px', top: '1px'}}> START 
-      </button>
-      </div> */}
+            <form>
+       
       <Button
-      href={"https://designedbyus.typeform.com/to/HU5qHY"}
+      href="https://designedbyus.typeform.com/to/HU5qHY"
       style={{
       width: '30%', 
       display: 'flex',

@@ -30,7 +30,7 @@ const Layout = ({ children }) => (
         { property: "og:type", content: "website" },
         { property: "og:site_name", content: "DesignedByUs | Design Corps" },
         { property: "twitter:site", content: "@DBU_DesignCorps" },
-        { property: "twitter:creator", content: "@julesforrest" },
+        { property: "twitter:creator", content: "@annna_tyan" },
         { property: "twitter:card", content: "summary_large_image" },
         {
           property: "twitter:image",
