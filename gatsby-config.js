@@ -15,7 +15,7 @@ module.exports = {
       options: {
         consumerKey: process.env.DBU_CONSUMER_KEY,
         consumerSecret: process.env.DBU_CONSUMER_SECRET,
-        bearerToken: "AAAAAAAAAAAAAAAAAAAAAOH9KgEAAAAAVLvqXLj9bVwrQn3i0xwTIUvV9Yc%3Da1FxKJBXaKEhKuFZejm1CO5dy8BYwh4G2LCpLzXUo5Key8FPBU",
+        bearerToken: process.env.DBU_BEARER_TOKEN,
         twitterIdForFollowingList: "1337449516946087938",
       },
     },
