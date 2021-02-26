@@ -20,7 +20,7 @@ Start by creating an app on the [Twitter developer dashboard](https://developer.
 
 If you haven't already, clone the repo and open it in your code editor.
 
-On lines 16 and 17 of the `gatsby-config.js` file, replace `process.env.WWD_TWITTER_CONSUMER_KEY` with the consumer key from the "Keys and tokens" page of your app's developer dashboard.
+On lines 16 and 17 of the `gatsby-config.js` file, replace `process.env.DBU_TWITTER_CONSUMER_KEY` with the consumer key from the "Keys and tokens" page of your app's developer dashboard.
 
 Generate a bearer token by running this command in your terminal, replacing the variables with your consumer key and secret information.
 
@@ -30,7 +30,7 @@ curl -u "$CONSUMER_KEY:$CONSUMER_SECRET" \
     'https://api.twitter.com/oauth2/token'
 ```
 
-Copy the bearer token and on line 18, replace `process.env.WWD_TWITTER_BEARER_TOKEN` with it.
+Copy the bearer token and on line 18, replace `process.env.DBU_TWITTER_BEARER_TOKEN` with it.
 
 
 
