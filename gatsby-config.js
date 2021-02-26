@@ -4,9 +4,9 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    // title: "Designed By Us Design Corp",
-    // description: `Directory highlights all under represented - scientist, technologists, engineers, artists, mathmeticians and designers`,
-    // siteUrl: `https://womenwho.design`,
+    title: "Designed By Us Design Corp",
+    description: `Directory highlights all under represented - scientist, technologists, engineers, artists, mathmeticians and designers`,
+    siteUrl: `https://designcorps.designedbyus.org/`,
     pathPrefix: "/design-corps-test"
   },
   plugins: [
