@@ -6,7 +6,7 @@ DBU Design Corps is a [Gatsby](https://gatsbyjs.org)-powered Twitter directory t
 
 * **For members**, it enables you to brand, market & connects you to allies who are committed to sponsoring your progress. 
 * **For Hiring Managers** and Diversity and Inclusion leaders, it enables them to discover, connect, invite and hire highly skilled talent.
-* **For Journalists, Event Organizers + Podcasters** it acts a destination to discover, spotlight, hire, interview and include diverse vital voices in #STEAMD 
+* **For Journalists, Event Organizers + Podcasters** it acts a destination to discover, spotlight, hire, interview and include diverse vital voices in #STEAMD. 
 
 
 ## Forking this project
