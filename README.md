@@ -1,4 +1,4 @@
-# Designed By Us™ | Design Corps Directory 
+# DesignedByUs™ | Design Corps Directory 
 
 DBU Design Corps is a [Gatsby](https://gatsbyjs.org)-powered Twitter directory that highlights all under represented  STEAMD (Science, Technology, Engineering, Art, Medicine, Design) representatives in order to build Earth’s largest pipeline of future inventors, designers, engineers and audacious changemakers across all industries. It aims to help people find notable and relevant voices to follow on Twitter by parsing Twitter bios for popular keywords.
 
